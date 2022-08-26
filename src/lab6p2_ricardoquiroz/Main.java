@@ -244,6 +244,7 @@ public class Main extends javax.swing.JFrame {
         jLabel6.setText("Sexo");
 
         buttonGroup1.add(RB_male);
+        RB_male.setSelected(true);
         RB_male.setText("M");
 
         buttonGroup1.add(RB_female);
@@ -252,6 +253,7 @@ public class Main extends javax.swing.JFrame {
         jLabel7.setText("Estado Civil");
 
         buttonGroup2.add(RB_soltero);
+        RB_soltero.setSelected(true);
         RB_soltero.setText("Soltero");
 
         buttonGroup2.add(RB_casado);
@@ -292,6 +294,11 @@ public class Main extends javax.swing.JFrame {
         jLabel22.setText("lps");
 
         JB_agregarpersona.setText("Agregar Persona");
+        JB_agregarpersona.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_agregarpersonaMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout JP_crearpersonaLayout = new javax.swing.GroupLayout(JP_crearpersona);
         JP_crearpersona.setLayout(JP_crearpersonaLayout);
@@ -1345,6 +1352,30 @@ public class Main extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void JB_agregarpersonaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_agregarpersonaMouseClicked
+        // TODO add your handling code here:
+        String sexo;
+        String estadoc;
+        if (RB_casado.isSelected()) {
+            estadoc = "Casado";
+        }
+        else{
+            estadoc = "Soltero";
+        }
+        if (RB_male.isSelected()) {
+            sexo = "M";
+        }
+        else{
+            sexo = "F";
+        }
+        if (((String)CB_tipopersona.getSelectedItem()).equals("Gerente")) {
+            listap.add(new Gerente(TF_usuario.getText(), TF_contrasena.getText(), (String)CB_cargo.getSelectedItem(), TF_id.getText(), TF_nombre.getText(), estadoc, sexo, Integer.parseInt(FTF_edad.getText()), Integer.parseInt(FTF_altura.getText()), Integer.parseInt(FTF_peso.getText())));
+        }
+        else if (((String)CB_tipopersona.getSelectedItem()).equals("Personal General")) {
+            listap.add(new Personalg(TF_ocupacion.getText(), TF_horario.getText(), Integer.parseInt(FTF_ttrabajando.getText()), Integer.parseInt(FTF_sueldo.getText()), TF_id.getText(), TF_nombre.getText(), estadoc, sexo, Integer.parseInt(FTF_edad.getText()), Integer.parseInt(FTF_altura.getText()), Integer.parseInt(FTF_peso.getText())));
+        }
+    }//GEN-LAST:event_JB_agregarpersonaMouseClicked
 
     /**
      * @param args the command line arguments
