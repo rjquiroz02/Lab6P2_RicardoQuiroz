@@ -217,9 +217,13 @@ public class Main extends javax.swing.JFrame {
         JP_listapersona = new javax.swing.JPanel();
         jScrollPane12 = new javax.swing.JScrollPane();
         JL_listapersonas = new javax.swing.JList<>();
+        jLabel86 = new javax.swing.JLabel();
+        JB_eliminarlistapersonas = new javax.swing.JButton();
         JP_listaobjeto = new javax.swing.JPanel();
         jScrollPane11 = new javax.swing.JScrollPane();
         JL_listaobjetos = new javax.swing.JList<>();
+        jLabel66 = new javax.swing.JLabel();
+        JB_eliminarlistaobjetos = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -1266,13 +1270,20 @@ public class Main extends javax.swing.JFrame {
 
         jScrollPane12.setViewportView(JL_listapersonas);
 
+        jLabel86.setText("Seleccione el elemento de la lista que desea eliminar y despues haga click en eliminar");
+
+        JB_eliminarlistapersonas.setText("Eliminar");
+
         javax.swing.GroupLayout JP_listapersonaLayout = new javax.swing.GroupLayout(JP_listapersona);
         JP_listapersona.setLayout(JP_listapersonaLayout);
         JP_listapersonaLayout.setHorizontalGroup(
             JP_listapersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(JP_listapersonaLayout.createSequentialGroup()
                 .addGap(48, 48, 48)
-                .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 850, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(JP_listapersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(JB_eliminarlistapersonas, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 850, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel86))
                 .addContainerGap(53, Short.MAX_VALUE))
         );
         JP_listapersonaLayout.setVerticalGroup(
@@ -1280,12 +1291,20 @@ public class Main extends javax.swing.JFrame {
             .addGroup(JP_listapersonaLayout.createSequentialGroup()
                 .addGap(29, 29, 29)
                 .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(335, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel86)
+                .addGap(18, 18, 18)
+                .addComponent(JB_eliminarlistapersonas)
+                .addContainerGap(262, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Lista de Personas", JP_listapersona);
 
         jScrollPane11.setViewportView(JL_listaobjetos);
+
+        jLabel66.setText("Seleccione el elemento de la lista que desea eliminar y despues haga click en eliminar");
+
+        JB_eliminarlistaobjetos.setText("Eliminar");
 
         javax.swing.GroupLayout JP_listaobjetoLayout = new javax.swing.GroupLayout(JP_listaobjeto);
         JP_listaobjeto.setLayout(JP_listaobjetoLayout);
@@ -1293,7 +1312,10 @@ public class Main extends javax.swing.JFrame {
             JP_listaobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(JP_listaobjetoLayout.createSequentialGroup()
                 .addGap(34, 34, 34)
-                .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 860, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(JP_listaobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(JB_eliminarlistaobjetos, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 860, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel66))
                 .addContainerGap(57, Short.MAX_VALUE))
         );
         JP_listaobjetoLayout.setVerticalGroup(
@@ -1301,7 +1323,11 @@ public class Main extends javax.swing.JFrame {
             .addGroup(JP_listaobjetoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(345, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel66)
+                .addGap(18, 18, 18)
+                .addComponent(JB_eliminarlistaobjetos)
+                .addContainerGap(272, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Lista de Objetos", JP_listaobjeto);
@@ -1387,6 +1413,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton JB_agregarobjeto;
     private javax.swing.JButton JB_agregarpersona;
     private javax.swing.JButton JB_color;
+    private javax.swing.JButton JB_eliminarlistaobjetos;
+    private javax.swing.JButton JB_eliminarlistapersonas;
     private javax.swing.JButton JB_modcolor;
     private javax.swing.JButton JB_modobjeto;
     private javax.swing.JButton JB_modpersona;
@@ -1515,6 +1543,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel64;
     private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel67;
     private javax.swing.JLabel jLabel68;
     private javax.swing.JLabel jLabel69;
@@ -1536,6 +1565,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel83;
     private javax.swing.JLabel jLabel84;
     private javax.swing.JLabel jLabel85;
+    private javax.swing.JLabel jLabel86;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
