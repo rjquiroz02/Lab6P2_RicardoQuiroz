@@ -5,6 +5,8 @@
  */
 package lab6p2_ricardoquiroz;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author rjqer
@@ -29,6 +31,27 @@ public class Main extends javax.swing.JFrame {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
         JP_crearpersona = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        CB_tipopersona = new javax.swing.JComboBox<>();
+        jLabel3 = new javax.swing.JLabel();
+        TF_id = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        TF_nombre = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        FTF_edad = new javax.swing.JFormattedTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jLabel7 = new javax.swing.JLabel();
+        jRadioButton3 = new javax.swing.JRadioButton();
+        jRadioButton4 = new javax.swing.JRadioButton();
+        jLabel8 = new javax.swing.JLabel();
+        jFormattedTextField1 = new javax.swing.JFormattedTextField();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jFormattedTextField2 = new javax.swing.JFormattedTextField();
+        jLabel11 = new javax.swing.JLabel();
         JP_crearobjeto = new javax.swing.JPanel();
         JP_modpersona = new javax.swing.JPanel();
         JP_modobjeto = new javax.swing.JPanel();
@@ -38,16 +61,125 @@ public class Main extends javax.swing.JFrame {
         JP_listaobjeto = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel1.setText("Ingrese los datos de la persona");
+
+        jLabel2.setText("Tipo de persona");
+
+        CB_tipopersona.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Gerente", "Personal General" }));
+
+        jLabel3.setText("ID");
+
+        jLabel4.setText("Nombre");
+
+        jLabel5.setText("Edad");
+
+        jLabel6.setText("Sexo");
+
+        jRadioButton1.setText("M");
+
+        jRadioButton2.setText("F");
+
+        jLabel7.setText("Estado Civil");
+
+        jRadioButton3.setText("Soltero");
+
+        jRadioButton4.setText("Casado");
+
+        jLabel8.setText("Altura");
+
+        jLabel9.setText("cms");
+
+        jLabel10.setText("Peso");
+
+        jLabel11.setText("lbs");
 
         javax.swing.GroupLayout JP_crearpersonaLayout = new javax.swing.GroupLayout(JP_crearpersona);
         JP_crearpersona.setLayout(JP_crearpersonaLayout);
         JP_crearpersonaLayout.setHorizontalGroup(
             JP_crearpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 801, Short.MAX_VALUE)
+            .addGroup(JP_crearpersonaLayout.createSequentialGroup()
+                .addGap(37, 37, 37)
+                .addGroup(JP_crearpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addGroup(JP_crearpersonaLayout.createSequentialGroup()
+                        .addGroup(JP_crearpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel10))
+                        .addGap(18, 18, 18)
+                        .addGroup(JP_crearpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(CB_tipopersona, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TF_id)
+                            .addComponent(TF_nombre)
+                            .addComponent(FTF_edad, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(JP_crearpersonaLayout.createSequentialGroup()
+                                .addComponent(jRadioButton1)
+                                .addGap(18, 18, 18)
+                                .addComponent(jRadioButton2))
+                            .addGroup(JP_crearpersonaLayout.createSequentialGroup()
+                                .addComponent(jRadioButton3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jRadioButton4))
+                            .addGroup(JP_crearpersonaLayout.createSequentialGroup()
+                                .addGroup(JP_crearpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jFormattedTextField2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
+                                    .addComponent(jFormattedTextField1, javax.swing.GroupLayout.Alignment.LEADING))
+                                .addGap(18, 18, 18)
+                                .addGroup(JP_crearpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel9)
+                                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                .addContainerGap(567, Short.MAX_VALUE))
         );
         JP_crearpersonaLayout.setVerticalGroup(
             JP_crearpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 554, Short.MAX_VALUE)
+            .addGroup(JP_crearpersonaLayout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addGroup(JP_crearpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(CB_tipopersona, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addGap(18, 18, 18)
+                .addGroup(JP_crearpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(TF_id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(JP_crearpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(TF_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(JP_crearpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(FTF_edad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(JP_crearpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(jRadioButton1)
+                    .addComponent(jRadioButton2))
+                .addGap(18, 18, 18)
+                .addGroup(JP_crearpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(jRadioButton3)
+                    .addComponent(jRadioButton4))
+                .addGap(18, 18, 18)
+                .addGroup(JP_crearpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9))
+                .addGap(18, 18, 18)
+                .addGroup(JP_crearpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(jFormattedTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel11))
+                .addContainerGap(265, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Crear Persona", JP_crearpersona);
@@ -56,11 +188,11 @@ public class Main extends javax.swing.JFrame {
         JP_crearobjeto.setLayout(JP_crearobjetoLayout);
         JP_crearobjetoLayout.setHorizontalGroup(
             JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 801, Short.MAX_VALUE)
+            .addGap(0, 895, Short.MAX_VALUE)
         );
         JP_crearobjetoLayout.setVerticalGroup(
             JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 554, Short.MAX_VALUE)
+            .addGap(0, 622, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Crear Objeto", JP_crearobjeto);
@@ -69,11 +201,11 @@ public class Main extends javax.swing.JFrame {
         JP_modpersona.setLayout(JP_modpersonaLayout);
         JP_modpersonaLayout.setHorizontalGroup(
             JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 801, Short.MAX_VALUE)
+            .addGap(0, 895, Short.MAX_VALUE)
         );
         JP_modpersonaLayout.setVerticalGroup(
             JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 554, Short.MAX_VALUE)
+            .addGap(0, 622, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Modificar Persona", JP_modpersona);
@@ -82,11 +214,11 @@ public class Main extends javax.swing.JFrame {
         JP_modobjeto.setLayout(JP_modobjetoLayout);
         JP_modobjetoLayout.setHorizontalGroup(
             JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 801, Short.MAX_VALUE)
+            .addGap(0, 895, Short.MAX_VALUE)
         );
         JP_modobjetoLayout.setVerticalGroup(
             JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 554, Short.MAX_VALUE)
+            .addGap(0, 622, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Modificar Objeto", JP_modobjeto);
@@ -95,11 +227,11 @@ public class Main extends javax.swing.JFrame {
         JP_jerarpersona.setLayout(JP_jerarpersonaLayout);
         JP_jerarpersonaLayout.setHorizontalGroup(
             JP_jerarpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 801, Short.MAX_VALUE)
+            .addGap(0, 895, Short.MAX_VALUE)
         );
         JP_jerarpersonaLayout.setVerticalGroup(
             JP_jerarpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 554, Short.MAX_VALUE)
+            .addGap(0, 622, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Jerarquia de Personas", JP_jerarpersona);
@@ -108,11 +240,11 @@ public class Main extends javax.swing.JFrame {
         JP_jerarobjeto.setLayout(JP_jerarobjetoLayout);
         JP_jerarobjetoLayout.setHorizontalGroup(
             JP_jerarobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 801, Short.MAX_VALUE)
+            .addGap(0, 895, Short.MAX_VALUE)
         );
         JP_jerarobjetoLayout.setVerticalGroup(
             JP_jerarobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 554, Short.MAX_VALUE)
+            .addGap(0, 622, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Jerarquia de Objetos", JP_jerarobjeto);
@@ -121,11 +253,11 @@ public class Main extends javax.swing.JFrame {
         JP_listapersona.setLayout(JP_listapersonaLayout);
         JP_listapersonaLayout.setHorizontalGroup(
             JP_listapersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 801, Short.MAX_VALUE)
+            .addGap(0, 895, Short.MAX_VALUE)
         );
         JP_listapersonaLayout.setVerticalGroup(
             JP_listapersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 554, Short.MAX_VALUE)
+            .addGap(0, 622, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Lista de Personas", JP_listapersona);
@@ -134,11 +266,11 @@ public class Main extends javax.swing.JFrame {
         JP_listaobjeto.setLayout(JP_listaobjetoLayout);
         JP_listaobjetoLayout.setHorizontalGroup(
             JP_listaobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 801, Short.MAX_VALUE)
+            .addGap(0, 895, Short.MAX_VALUE)
         );
         JP_listaobjetoLayout.setVerticalGroup(
             JP_listaobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 554, Short.MAX_VALUE)
+            .addGap(0, 622, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Lista de Objetos", JP_listaobjeto);
@@ -147,7 +279,7 @@ public class Main extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 806, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -192,7 +324,12 @@ public class Main extends javax.swing.JFrame {
         });
     }
 
+    
+    ArrayList<Persona> listap = new ArrayList();
+    ArrayList<Objeto> listao = new ArrayList();
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> CB_tipopersona;
+    private javax.swing.JFormattedTextField FTF_edad;
     private javax.swing.JPanel JP_crearobjeto;
     private javax.swing.JPanel JP_crearpersona;
     private javax.swing.JPanel JP_jerarobjeto;
@@ -201,6 +338,25 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel JP_listapersona;
     private javax.swing.JPanel JP_modobjeto;
     private javax.swing.JPanel JP_modpersona;
+    private javax.swing.JTextField TF_id;
+    private javax.swing.JTextField TF_nombre;
+    private javax.swing.JFormattedTextField jFormattedTextField1;
+    private javax.swing.JFormattedTextField jFormattedTextField2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JTabbedPane jTabbedPane1;
     // End of variables declaration//GEN-END:variables
 }
