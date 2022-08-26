@@ -93,26 +93,26 @@ public class Main extends javax.swing.JFrame {
         FTF_talla = new javax.swing.JFormattedTextField();
         jLabel33 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
+        TA_descsuela = new javax.swing.JTextArea();
         jLabel34 = new javax.swing.JLabel();
         FTF_comodidad = new javax.swing.JFormattedTextField();
         jLabel35 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        TF_tipotela = new javax.swing.JTextField();
         jLabel38 = new javax.swing.JLabel();
         TF_paiselab = new javax.swing.JTextField();
         jLabel39 = new javax.swing.JLabel();
         jLabel40 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        TA_deschogar = new javax.swing.JTextArea();
         jLabel41 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jTextArea3 = new javax.swing.JTextArea();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
+        TA_instrucciones = new javax.swing.JTextArea();
+        RB_S = new javax.swing.JRadioButton();
+        RB_M = new javax.swing.JRadioButton();
+        RB_L = new javax.swing.JRadioButton();
+        RB_XL = new javax.swing.JRadioButton();
         jLabel42 = new javax.swing.JLabel();
         FTF_tgarantia = new javax.swing.JFormattedTextField();
         jLabel43 = new javax.swing.JLabel();
@@ -158,6 +158,50 @@ public class Main extends javax.swing.JFrame {
         jLabel64 = new javax.swing.JLabel();
         JB_modpersona = new javax.swing.JButton();
         JP_modobjeto = new javax.swing.JPanel();
+        jLabel67 = new javax.swing.JLabel();
+        JB_modcolor = new javax.swing.JButton();
+        jLabel68 = new javax.swing.JLabel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        TA_moddescripcion = new javax.swing.JTextArea();
+        jLabel69 = new javax.swing.JLabel();
+        TF_modmarca = new javax.swing.JTextField();
+        jLabel70 = new javax.swing.JLabel();
+        FTF_modtamano = new javax.swing.JFormattedTextField();
+        jLabel71 = new javax.swing.JLabel();
+        TF_modcalidad = new javax.swing.JTextField();
+        jLabel72 = new javax.swing.JLabel();
+        CB_modpersonaingreso = new javax.swing.JComboBox<>();
+        jLabel73 = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        FTF_modtalla = new javax.swing.JFormattedTextField();
+        jLabel75 = new javax.swing.JLabel();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        TA_moddescsuela = new javax.swing.JTextArea();
+        jLabel76 = new javax.swing.JLabel();
+        FTF_modcomodidad = new javax.swing.JFormattedTextField();
+        jLabel77 = new javax.swing.JLabel();
+        jLabel78 = new javax.swing.JLabel();
+        jLabel79 = new javax.swing.JLabel();
+        TF_modtipotela = new javax.swing.JTextField();
+        jLabel80 = new javax.swing.JLabel();
+        TF_modpaiselab = new javax.swing.JTextField();
+        jLabel81 = new javax.swing.JLabel();
+        jLabel82 = new javax.swing.JLabel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        TA_moddeschogar = new javax.swing.JTextArea();
+        jLabel83 = new javax.swing.JLabel();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        TA_modinstrucciones = new javax.swing.JTextArea();
+        RB_modS = new javax.swing.JRadioButton();
+        RB_modM = new javax.swing.JRadioButton();
+        RB_modL = new javax.swing.JRadioButton();
+        RB_modXL = new javax.swing.JRadioButton();
+        jLabel84 = new javax.swing.JLabel();
+        FTF_modtgarantia = new javax.swing.JFormattedTextField();
+        jLabel85 = new javax.swing.JLabel();
+        JB_modobjeto = new javax.swing.JButton();
+        jLabel65 = new javax.swing.JLabel();
+        CB_selecobjetomod = new javax.swing.JComboBox<>();
         JP_jerarpersona = new javax.swing.JPanel();
         JP_jerarobjeto = new javax.swing.JPanel();
         JP_listapersona = new javax.swing.JPanel();
@@ -418,9 +462,9 @@ public class Main extends javax.swing.JFrame {
 
         jLabel33.setText("Descripcion suela");
 
-        jTextArea2.setColumns(20);
-        jTextArea2.setRows(5);
-        jScrollPane3.setViewportView(jTextArea2);
+        TA_descsuela.setColumns(20);
+        TA_descsuela.setRows(5);
+        jScrollPane3.setViewportView(TA_descsuela);
 
         jLabel34.setText("Comodidad");
 
@@ -438,23 +482,23 @@ public class Main extends javax.swing.JFrame {
 
         jLabel40.setText("Descripcion");
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane2.setViewportView(jTextArea1);
+        TA_deschogar.setColumns(20);
+        TA_deschogar.setRows(5);
+        jScrollPane2.setViewportView(TA_deschogar);
 
         jLabel41.setText("Instrucciones");
 
-        jTextArea3.setColumns(20);
-        jTextArea3.setRows(5);
-        jScrollPane4.setViewportView(jTextArea3);
+        TA_instrucciones.setColumns(20);
+        TA_instrucciones.setRows(5);
+        jScrollPane4.setViewportView(TA_instrucciones);
 
-        jRadioButton1.setText("S");
+        RB_S.setText("S");
 
-        jRadioButton2.setText("M");
+        RB_M.setText("M");
 
-        jRadioButton3.setText("L");
+        RB_L.setText("L");
 
-        jRadioButton4.setText("XL");
+        RB_XL.setText("XL");
 
         jLabel42.setText("Tiempo Garantia");
 
@@ -469,96 +513,100 @@ public class Main extends javax.swing.JFrame {
             .addGroup(JP_crearobjetoLayout.createSequentialGroup()
                 .addGap(44, 44, 44)
                 .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel23)
                     .addGroup(JP_crearobjetoLayout.createSequentialGroup()
+                        .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel24)
+                            .addComponent(jLabel26)
+                            .addComponent(jLabel25)
+                            .addComponent(jLabel27)
+                            .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel29))
+                        .addGap(18, 18, 18)
                         .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel23)
-                            .addGroup(JP_crearobjetoLayout.createSequentialGroup()
-                                .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel24)
-                                    .addComponent(jLabel26)
-                                    .addComponent(jLabel25)
-                                    .addComponent(jLabel27)
-                                    .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel29))
-                                .addGap(18, 18, 18)
-                                .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(CB_tipoobjeto, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(JB_color)
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(TF_calidad, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
-                                        .addComponent(TF_marca, javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(FTF_tamano, javax.swing.GroupLayout.Alignment.LEADING))))
-                            .addGroup(JP_crearobjetoLayout.createSequentialGroup()
-                                .addComponent(jLabel30)
-                                .addGap(18, 18, 18)
-                                .addComponent(CB_personaingreso, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(523, 523, 523))
+                            .addComponent(CB_tipoobjeto, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(JB_color)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(TF_calidad, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
+                                .addComponent(TF_marca, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(FTF_tamano, javax.swing.GroupLayout.Alignment.LEADING))))
                     .addGroup(JP_crearobjetoLayout.createSequentialGroup()
-                        .addComponent(jLabel31)
-                        .addGap(294, 294, 294)
+                        .addComponent(jLabel30)
+                        .addGap(18, 18, 18)
+                        .addComponent(CB_personaingreso, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(523, 523, 523))
+            .addGroup(JP_crearobjetoLayout.createSequentialGroup()
+                .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(JP_crearobjetoLayout.createSequentialGroup()
+                        .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(JP_crearobjetoLayout.createSequentialGroup()
+                                .addGap(44, 44, 44)
+                                .addComponent(jLabel31)
+                                .addGap(294, 294, 294))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JP_crearobjetoLayout.createSequentialGroup()
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel32)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(FTF_talla, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(152, 152, 152)))
                         .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(JP_crearobjetoLayout.createSequentialGroup()
                                 .addComponent(jLabel36)
                                 .addGap(18, 18, 18)
-                                .addComponent(jRadioButton1)
+                                .addComponent(RB_S)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jRadioButton2)
+                                .addComponent(RB_M)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jRadioButton3)
+                                .addComponent(RB_L)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jRadioButton4)))
-                        .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(JP_crearobjetoLayout.createSequentialGroup()
-                                .addGap(70, 70, 70)
-                                .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(JP_crearobjetoLayout.createSequentialGroup()
-                                        .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 0, Short.MAX_VALUE))
-                                    .addGroup(JP_crearobjetoLayout.createSequentialGroup()
-                                        .addComponent(jLabel40)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jScrollPane4)
-                                            .addComponent(jScrollPane2)))))
-                            .addGroup(JP_crearobjetoLayout.createSequentialGroup()
-                                .addGap(57, 57, 57)
-                                .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel41)
-                                    .addGroup(JP_crearobjetoLayout.createSequentialGroup()
-                                        .addComponent(jLabel42)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(FTF_tgarantia, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(0, 0, Short.MAX_VALUE)))
-                        .addContainerGap())))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JP_crearobjetoLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel32)
-                    .addComponent(jLabel33)
-                    .addComponent(jLabel34))
-                .addGap(18, 18, 18)
-                .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(RB_XL))))
                     .addGroup(JP_crearobjetoLayout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel34)
+                            .addComponent(jLabel33))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(FTF_talla, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(JP_crearobjetoLayout.createSequentialGroup()
                                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(41, 41, 41)
-                                .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jLabel37, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel38, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(26, 26, 26)
+                                .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(JP_crearobjetoLayout.createSequentialGroup()
+                                        .addComponent(jLabel37)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(TF_tipotela, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(JP_crearobjetoLayout.createSequentialGroup()
+                                        .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(TF_paiselab, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(FTF_comodidad, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(JP_crearobjetoLayout.createSequentialGroup()
+                        .addGap(70, 70, 70)
+                        .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(JP_crearobjetoLayout.createSequentialGroup()
+                                .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(JP_crearobjetoLayout.createSequentialGroup()
+                                .addComponent(jLabel40)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(TF_paiselab, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(314, 314, 314))
+                                    .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
+                                    .addComponent(jScrollPane2)))))
                     .addGroup(JP_crearobjetoLayout.createSequentialGroup()
-                        .addComponent(FTF_comodidad, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(202, 202, 202))))
+                        .addGap(57, 57, 57)
+                        .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel41)
+                            .addGroup(JP_crearobjetoLayout.createSequentialGroup()
+                                .addComponent(jLabel42)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(FTF_tgarantia, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JP_crearobjetoLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(JB_agregarobjeto, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -606,22 +654,34 @@ public class Main extends javax.swing.JFrame {
                 .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(JP_crearobjetoLayout.createSequentialGroup()
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel34)
-                            .addComponent(FTF_comodidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(39, 39, 39))
+                        .addContainerGap())
                     .addGroup(JP_crearobjetoLayout.createSequentialGroup()
                         .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel32)
                             .addComponent(FTF_talla, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel36)
                             .addComponent(jLabel40)
-                            .addComponent(jRadioButton1)
-                            .addComponent(jRadioButton2)
-                            .addComponent(jRadioButton3)
-                            .addComponent(jRadioButton4))
+                            .addComponent(RB_S)
+                            .addComponent(RB_M)
+                            .addComponent(RB_L)
+                            .addComponent(RB_XL))
                         .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(JP_crearobjetoLayout.createSequentialGroup()
+                                .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(JP_crearobjetoLayout.createSequentialGroup()
+                                        .addGap(38, 38, 38)
+                                        .addComponent(jLabel41))
+                                    .addGroup(JP_crearobjetoLayout.createSequentialGroup()
+                                        .addGap(38, 38, 38)
+                                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                                .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel42)
+                                    .addComponent(FTF_tgarantia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel43))
+                                .addGap(16, 16, 16)
+                                .addComponent(JB_agregarobjeto)
+                                .addContainerGap())
                             .addGroup(JP_crearobjetoLayout.createSequentialGroup()
                                 .addGap(18, 18, 18)
                                 .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -630,25 +690,16 @@ public class Main extends javax.swing.JFrame {
                                     .addGroup(JP_crearobjetoLayout.createSequentialGroup()
                                         .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                             .addComponent(jLabel37)
-                                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(TF_tipotela, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGap(18, 18, 18)
                                         .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                             .addComponent(jLabel38)
-                                            .addComponent(TF_paiselab, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                            .addGroup(JP_crearobjetoLayout.createSequentialGroup()
-                                .addGap(38, 38, 38)
-                                .addComponent(jLabel41))
-                            .addGroup(JP_crearobjetoLayout.createSequentialGroup()
-                                .addGap(38, 38, 38)
-                                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
-                        .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel42)
-                            .addComponent(FTF_tgarantia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel43))
-                        .addGap(16, 16, 16)
-                        .addComponent(JB_agregarobjeto)
-                        .addContainerGap())))
+                                            .addComponent(TF_paiselab, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(14, 14, 14)
+                                .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel34)
+                                    .addComponent(FTF_comodidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
         );
 
         jTabbedPane1.addTab("Crear Objeto", JP_crearobjeto);
@@ -871,15 +922,272 @@ public class Main extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Modificar Persona", JP_modpersona);
 
+        jLabel67.setText("Color");
+
+        jLabel68.setText("Descripcion");
+
+        TA_moddescripcion.setColumns(20);
+        TA_moddescripcion.setRows(5);
+        jScrollPane5.setViewportView(TA_moddescripcion);
+
+        jLabel69.setText("Marca");
+
+        jLabel70.setText("Tamano");
+
+        jLabel71.setText("Calidad");
+
+        jLabel72.setText("Persona que lo ingreso");
+
+        jLabel73.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel73.setText("Zapatos");
+
+        jLabel74.setText("Talla");
+
+        jLabel75.setText("Descripcion suela");
+
+        TA_moddescsuela.setColumns(20);
+        TA_moddescsuela.setRows(5);
+        jScrollPane6.setViewportView(TA_moddescsuela);
+
+        jLabel76.setText("Comodidad");
+
+        jLabel77.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel77.setText("Ropa");
+
+        jLabel78.setText("Talla");
+
+        jLabel79.setText("Tipo Tela");
+
+        jLabel80.setText("Pais elab");
+
+        jLabel81.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel81.setText("Hogar");
+
+        jLabel82.setText("Descripcion");
+
+        TA_moddeschogar.setColumns(20);
+        TA_moddeschogar.setRows(5);
+        jScrollPane7.setViewportView(TA_moddeschogar);
+
+        jLabel83.setText("Instrucciones");
+
+        TA_modinstrucciones.setColumns(20);
+        TA_modinstrucciones.setRows(5);
+        jScrollPane8.setViewportView(TA_modinstrucciones);
+
+        RB_modS.setText("S");
+
+        RB_modM.setText("M");
+
+        RB_modL.setText("L");
+
+        RB_modXL.setText("XL");
+
+        jLabel84.setText("Tiempo Garantia");
+
+        jLabel85.setText("meses");
+
+        JB_modobjeto.setText("Modificar objeto");
+
+        jLabel65.setText("Seleccione el objeto a modificar");
+
         javax.swing.GroupLayout JP_modobjetoLayout = new javax.swing.GroupLayout(JP_modobjeto);
         JP_modobjeto.setLayout(JP_modobjetoLayout);
         JP_modobjetoLayout.setHorizontalGroup(
             JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 951, Short.MAX_VALUE)
+            .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                .addGap(44, 44, 44)
+                .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel68)
+                            .addComponent(jLabel67)
+                            .addComponent(jLabel69)
+                            .addComponent(jLabel70, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel71))
+                        .addGap(18, 18, 18)
+                        .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(JB_modcolor)
+                            .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(TF_modcalidad, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
+                                .addComponent(TF_modmarca, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(FTF_modtamano, javax.swing.GroupLayout.Alignment.LEADING))))
+                    .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                        .addComponent(jLabel72)
+                        .addGap(18, 18, 18)
+                        .addComponent(CB_modpersonaingreso, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(523, 564, Short.MAX_VALUE))
+            .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                        .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                                .addGap(44, 44, 44)
+                                .addComponent(jLabel73)
+                                .addGap(294, 294, 294))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JP_modobjetoLayout.createSequentialGroup()
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel74)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(FTF_modtalla, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(152, 152, 152)))
+                        .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel77, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                                .addComponent(jLabel78)
+                                .addGap(18, 18, 18)
+                                .addComponent(RB_modS)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(RB_modM)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(RB_modL)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(RB_modXL))))
+                    .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel76)
+                            .addComponent(jLabel75))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(26, 26, 26)
+                                .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                                        .addComponent(jLabel79)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(TF_modtipotela, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                                        .addComponent(jLabel80, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(TF_modpaiselab, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(FTF_modcomodidad, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                        .addGap(70, 70, 70)
+                        .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                                .addComponent(jLabel81, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                                .addComponent(jLabel82)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
+                                    .addComponent(jScrollPane7)))))
+                    .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                        .addGap(57, 57, 57)
+                        .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel83)
+                            .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                                .addComponent(jLabel84)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(FTF_modtgarantia, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel85, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JP_modobjetoLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JP_modobjetoLayout.createSequentialGroup()
+                        .addComponent(JB_modobjeto, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(385, 385, 385))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JP_modobjetoLayout.createSequentialGroup()
+                        .addComponent(jLabel65)
+                        .addGap(18, 18, 18)
+                        .addComponent(CB_selecobjetomod, javax.swing.GroupLayout.PREFERRED_SIZE, 401, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(305, 305, 305))))
         );
         JP_modobjetoLayout.setVerticalGroup(
             JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 650, Short.MAX_VALUE)
+            .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel65)
+                    .addComponent(CB_selecobjetomod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(44, 44, 44)
+                .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel67)
+                    .addComponent(JB_modcolor, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel68)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(16, 16, 16)
+                .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel69)
+                    .addComponent(TF_modmarca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel70)
+                    .addComponent(FTF_modtamano, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel71)
+                    .addComponent(TF_modcalidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel72)
+                    .addComponent(CB_modpersonaingreso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(38, 38, 38)
+                .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel73)
+                    .addComponent(jLabel77)
+                    .addComponent(jLabel81))
+                .addGap(18, 18, 18)
+                .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                        .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel74)
+                            .addComponent(FTF_modtalla, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel78)
+                            .addComponent(jLabel82)
+                            .addComponent(RB_modS)
+                            .addComponent(RB_modM)
+                            .addComponent(RB_modL)
+                            .addComponent(RB_modXL))
+                        .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                                .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                                        .addGap(38, 38, 38)
+                                        .addComponent(jLabel83))
+                                    .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                                        .addGap(38, 38, 38)
+                                        .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                                .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel84)
+                                    .addComponent(FTF_modtgarantia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel85))
+                                .addGap(16, 16, 16)
+                                .addComponent(JB_modobjeto)
+                                .addContainerGap())
+                            .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel75)
+                                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(JP_modobjetoLayout.createSequentialGroup()
+                                        .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(jLabel79)
+                                            .addComponent(TF_modtipotela, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(jLabel80)
+                                            .addComponent(TF_modpaiselab, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(14, 14, 14)
+                                .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel76)
+                                    .addComponent(FTF_modcomodidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
         );
 
         jTabbedPane1.addTab("Modificar Objeto", JP_modobjeto);
@@ -991,16 +1299,22 @@ public class Main extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> CB_cargo;
     private javax.swing.JComboBox<String> CB_modcargo;
+    private javax.swing.JComboBox<String> CB_modpersonaingreso;
     private javax.swing.JComboBox<String> CB_personaingreso;
     private javax.swing.JComboBox<String> CB_selecmodpersona;
+    private javax.swing.JComboBox<String> CB_selecobjetomod;
     private javax.swing.JComboBox<String> CB_tipoobjeto;
     private javax.swing.JComboBox<String> CB_tipopersona;
     private javax.swing.JFormattedTextField FTF_altura;
     private javax.swing.JFormattedTextField FTF_comodidad;
     private javax.swing.JFormattedTextField FTF_edad;
     private javax.swing.JFormattedTextField FTF_modaltura;
+    private javax.swing.JFormattedTextField FTF_modcomodidad;
     private javax.swing.JFormattedTextField FTF_modedad;
     private javax.swing.JFormattedTextField FTF_modpeso;
+    private javax.swing.JFormattedTextField FTF_modtalla;
+    private javax.swing.JFormattedTextField FTF_modtamano;
+    private javax.swing.JFormattedTextField FTF_modtgarantia;
     private javax.swing.JFormattedTextField FTF_modttrabajando;
     private javax.swing.JFormattedTextField FTF_peso;
     private javax.swing.JFormattedTextField FTF_sueldo;
@@ -1011,6 +1325,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton JB_agregarobjeto;
     private javax.swing.JButton JB_agregarpersona;
     private javax.swing.JButton JB_color;
+    private javax.swing.JButton JB_modcolor;
+    private javax.swing.JButton JB_modobjeto;
     private javax.swing.JButton JB_modpersona;
     private javax.swing.JPanel JP_crearobjeto;
     private javax.swing.JPanel JP_crearpersona;
@@ -1020,29 +1336,49 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel JP_listapersona;
     private javax.swing.JPanel JP_modobjeto;
     private javax.swing.JPanel JP_modpersona;
+    private javax.swing.JRadioButton RB_L;
+    private javax.swing.JRadioButton RB_M;
+    private javax.swing.JRadioButton RB_S;
+    private javax.swing.JRadioButton RB_XL;
     private javax.swing.JRadioButton RB_casado;
     private javax.swing.JRadioButton RB_female;
     private javax.swing.JRadioButton RB_male;
+    private javax.swing.JRadioButton RB_modL;
+    private javax.swing.JRadioButton RB_modM;
+    private javax.swing.JRadioButton RB_modS;
+    private javax.swing.JRadioButton RB_modXL;
     private javax.swing.JRadioButton RB_modcasado;
     private javax.swing.JRadioButton RB_modfemale;
     private javax.swing.JRadioButton RB_modmale;
     private javax.swing.JRadioButton RB_modsoltero;
     private javax.swing.JRadioButton RB_soltero;
+    private javax.swing.JTextArea TA_deschogar;
     private javax.swing.JTextArea TA_descripcion;
+    private javax.swing.JTextArea TA_descsuela;
+    private javax.swing.JTextArea TA_instrucciones;
+    private javax.swing.JTextArea TA_moddeschogar;
+    private javax.swing.JTextArea TA_moddescripcion;
+    private javax.swing.JTextArea TA_moddescsuela;
+    private javax.swing.JTextArea TA_modinstrucciones;
     private javax.swing.JTextField TF_calidad;
     private javax.swing.JTextField TF_contrasena;
     private javax.swing.JTextField TF_horario;
     private javax.swing.JTextField TF_id;
     private javax.swing.JTextField TF_marca;
+    private javax.swing.JTextField TF_modcalidad;
     private javax.swing.JTextField TF_modcontrasena;
     private javax.swing.JTextField TF_modhorario;
     private javax.swing.JTextField TF_modid;
+    private javax.swing.JTextField TF_modmarca;
     private javax.swing.JTextField TF_modnombre;
     private javax.swing.JTextField TF_modocupacion;
+    private javax.swing.JTextField TF_modpaiselab;
+    private javax.swing.JTextField TF_modtipotela;
     private javax.swing.JTextField TF_modusuario;
     private javax.swing.JTextField TF_nombre;
     private javax.swing.JTextField TF_ocupacion;
     private javax.swing.JTextField TF_paiselab;
+    private javax.swing.JTextField TF_tipotela;
     private javax.swing.JTextField TF_usuario;
     private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JLabel jLabel1;
@@ -1106,21 +1442,37 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel80;
+    private javax.swing.JLabel jLabel81;
+    private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
+    private javax.swing.JLabel jLabel85;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea2;
-    private javax.swing.JTextArea jTextArea3;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
