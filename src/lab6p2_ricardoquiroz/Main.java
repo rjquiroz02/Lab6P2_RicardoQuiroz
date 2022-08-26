@@ -1059,6 +1059,11 @@ public class Main extends javax.swing.JFrame {
         jLabel85.setText("meses");
 
         JB_modobjeto.setText("Modificar objeto");
+        JB_modobjeto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_modobjetoMouseClicked(evt);
+            }
+        });
 
         jLabel65.setText("Seleccione el objeto a modificar");
 
@@ -1263,6 +1268,8 @@ public class Main extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Modificar Objeto", JP_modobjeto);
 
+        javax.swing.tree.DefaultMutableTreeNode treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("root");
+        JT_jerarpersonas.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
         jScrollPane9.setViewportView(JT_jerarpersonas);
 
         javax.swing.GroupLayout JP_jerarpersonaLayout = new javax.swing.GroupLayout(JP_jerarpersona);
@@ -1284,6 +1291,8 @@ public class Main extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Jerarquia de Personas", JP_jerarpersona);
 
+        treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("root");
+        JT_jerarobjetos.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
         jScrollPane10.setViewportView(JT_jerarobjetos);
 
         javax.swing.GroupLayout JP_jerarobjetoLayout = new javax.swing.GroupLayout(JP_jerarobjeto);
@@ -1421,6 +1430,17 @@ public class Main extends javax.swing.JFrame {
             modelo.addElement(persona);
         }
         Persona nuevapersona2 = (Persona)CB_selecmodpersona.getSelectedItem();
+        TF_id.setText("");
+        TF_nombre.setText("");
+        FTF_edad.setText("");
+        FTF_altura.setText("");
+        FTF_peso.setText("");
+        TF_usuario.setText("");
+        TF_contrasena.setText("");
+        TF_ocupacion.setText("");
+        FTF_ttrabajando.setText("");
+        FTF_sueldo.setText("");
+        
         
         
     }//GEN-LAST:event_JB_agregarpersonaMouseClicked
@@ -1458,6 +1478,8 @@ public class Main extends javax.swing.JFrame {
         }
         Objeto nuevoobjeto = (Objeto)CB_selecobjetomod.getSelectedItem();
         
+        
+        
     }//GEN-LAST:event_JB_agregarobjetoMouseClicked
 
     private void JB_colorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_colorMouseClicked
@@ -1471,8 +1493,7 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_JB_modcolorMouseClicked
 
     private void JB_modpersonaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_modpersonaMouseClicked
-        // TODO add your handling code here:
-        listap.remove((Persona)CB_selecmodpersona.getSelectedItem());
+        // TODO add your handling code here       
         String sexo;
         String estadoc;
         if (RB_modcasado.isSelected()) {
@@ -1487,13 +1508,14 @@ public class Main extends javax.swing.JFrame {
         else{
             sexo = "F";
         }
-        if ((CB_tipopersona.getSelectedItem()) instanceof Gerente) {
+        if ((CB_selecmodpersona.getSelectedItem()) instanceof Gerente) {
             listap.add(new Gerente(TF_modusuario.getText(), TF_modcontrasena.getText(), (String)CB_modcargo.getSelectedItem(), TF_modid.getText(), TF_modnombre.getText(), estadoc, sexo, Integer.parseInt(FTF_modedad.getText()), Integer.parseInt(FTF_modaltura.getText()), Integer.parseInt(FTF_modpeso.getText())));
         }
-        else if ((CB_tipopersona.getSelectedItem()) instanceof Personalg) {
+        else if ((CB_selecmodpersona.getSelectedItem()) instanceof Personalg) {
             listap.add(new Personalg(TF_modocupacion.getText(), TF_modhorario.getText(), Integer.parseInt(FTF_modttrabajando.getText()), Integer.parseInt(FTF_modsueldo.getText()), TF_modid.getText(), TF_modnombre.getText(), estadoc, sexo, Integer.parseInt(FTF_modedad.getText()), Integer.parseInt(FTF_modaltura.getText()), Integer.parseInt(FTF_modpeso.getText())));
         }
         JOptionPane.showMessageDialog(this, "Modificado exitosamente");
+        listap.remove((Persona)CB_selecmodpersona.getSelectedItem());
         DefaultComboBoxModel modelo = (DefaultComboBoxModel)CB_selecmodpersona.getModel();
         //DefaultComboBoxModel.removeAllElements();
         modelo.removeAllElements();
@@ -1501,10 +1523,35 @@ public class Main extends javax.swing.JFrame {
             modelo.addElement(persona);
         }
         Persona nuevapersona2 = (Persona)CB_selecmodpersona.getSelectedItem();
-        
-        
+        DefaultComboBoxModel mod = (DefaultComboBoxModel)CB_personaingreso.getModel();
+        //DefaultComboBoxModel.removeAllElements();
+        mod.removeAllElements();
+        for (Persona persona : listap) {
+            mod.addElement(persona);
+        }
+        Persona nuevapersona = (Persona)CB_personaingreso.getSelectedItem();
+        TF_modid.setText("");
+        TF_modnombre.setText("");
+        FTF_modedad.setText("");
+        FTF_modaltura.setText("");
+        FTF_modpeso.setText("");
+        TF_modusuario.setText("");
+        TF_modcontrasena.setText("");
+        TF_modocupacion.setText("");
+        FTF_modttrabajando.setText("");
+        FTF_modsueldo.setText("");
         
     }//GEN-LAST:event_JB_modpersonaMouseClicked
+
+    private void JB_modobjetoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_modobjetoMouseClicked
+        // TODO add your handling code here:
+        
+        
+        
+        
+        
+        
+    }//GEN-LAST:event_JB_modobjetoMouseClicked
 
     /**
      * @param args the command line arguments
