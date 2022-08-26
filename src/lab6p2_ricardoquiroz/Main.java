@@ -5,7 +5,10 @@
  */
 package lab6p2_ricardoquiroz;
 
+import java.awt.Color;
 import java.util.ArrayList;
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.JColorChooser;
 
 /**
  *
@@ -470,6 +473,12 @@ public class Main extends javax.swing.JFrame {
 
         jLabel25.setText("Color");
 
+        JB_color.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_colorMouseClicked(evt);
+            }
+        });
+
         jLabel26.setText("Descripcion");
 
         TA_descripcion.setColumns(20);
@@ -522,6 +531,7 @@ public class Main extends javax.swing.JFrame {
         jScrollPane4.setViewportView(TA_instrucciones);
 
         buttonGroup3.add(RB_S);
+        RB_S.setSelected(true);
         RB_S.setText("S");
 
         buttonGroup3.add(RB_M);
@@ -538,6 +548,11 @@ public class Main extends javax.swing.JFrame {
         jLabel43.setText("meses");
 
         JB_agregarobjeto.setText("Agregar objeto");
+        JB_agregarobjeto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_agregarobjetoMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout JP_crearobjetoLayout = new javax.swing.GroupLayout(JP_crearobjeto);
         JP_crearobjeto.setLayout(JP_crearobjetoLayout);
@@ -748,6 +763,7 @@ public class Main extends javax.swing.JFrame {
         jLabel48.setText("Sexo");
 
         buttonGroup4.add(RB_modmale);
+        RB_modmale.setSelected(true);
         RB_modmale.setText("M");
 
         buttonGroup4.add(RB_modfemale);
@@ -756,6 +772,7 @@ public class Main extends javax.swing.JFrame {
         jLabel49.setText("Estado Civil");
 
         buttonGroup5.add(RB_modsoltero);
+        RB_modsoltero.setSelected(true);
         RB_modsoltero.setText("Soltero");
 
         buttonGroup5.add(RB_modcasado);
@@ -961,6 +978,12 @@ public class Main extends javax.swing.JFrame {
 
         jLabel67.setText("Color");
 
+        JB_modcolor.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_modcolorMouseClicked(evt);
+            }
+        });
+
         jLabel68.setText("Descripcion");
 
         TA_moddescripcion.setColumns(20);
@@ -1013,6 +1036,7 @@ public class Main extends javax.swing.JFrame {
         jScrollPane8.setViewportView(TA_modinstrucciones);
 
         buttonGroup6.add(RB_modS);
+        RB_modS.setSelected(true);
         RB_modS.setText("S");
 
         buttonGroup6.add(RB_modM);
@@ -1053,8 +1077,8 @@ public class Main extends javax.swing.JFrame {
                             .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(TF_modcalidad, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
-                                .addComponent(TF_modmarca, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(FTF_modtamano, javax.swing.GroupLayout.Alignment.LEADING))))
+                                .addComponent(TF_modmarca, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addComponent(FTF_modtamano, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(JP_modobjetoLayout.createSequentialGroup()
                         .addComponent(jLabel72)
                         .addGap(18, 18, 18)
@@ -1375,7 +1399,60 @@ public class Main extends javax.swing.JFrame {
         else if (((String)CB_tipopersona.getSelectedItem()).equals("Personal General")) {
             listap.add(new Personalg(TF_ocupacion.getText(), TF_horario.getText(), Integer.parseInt(FTF_ttrabajando.getText()), Integer.parseInt(FTF_sueldo.getText()), TF_id.getText(), TF_nombre.getText(), estadoc, sexo, Integer.parseInt(FTF_edad.getText()), Integer.parseInt(FTF_altura.getText()), Integer.parseInt(FTF_peso.getText())));
         }
+        DefaultComboBoxModel mod = (DefaultComboBoxModel)CB_personaingreso.getModel();
+        //DefaultComboBoxModel.removeAllElements();
+        mod.removeAllElements();
+        for (Persona persona : listap) {
+            mod.addElement(persona);
+        }
+        Persona nuevapersona = (Persona)CB_personaingreso.getSelectedItem();
+        
+        
     }//GEN-LAST:event_JB_agregarpersonaMouseClicked
+
+    private void JB_agregarobjetoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_agregarobjetoMouseClicked
+        // TODO add your handling code here:
+        String size;
+        if (RB_S.isSelected()) {
+            size = "S";
+        }
+        else if (RB_M.isSelected()) {
+            size = "M";
+        }
+        else if (RB_L.isSelected()) {
+            size = "L";
+        }
+        else{
+            size = "XL";
+        }
+        if (((String)CB_tipoobjeto.getSelectedItem()).equals("Zapato")) {
+            listao.add(new Zapato(Integer.parseInt(FTF_talla.getText()), Integer.parseInt(FTF_comodidad.getText()), TA_descsuela.getText(), JB_color.getBackground(), TA_descripcion.getText(), TF_marca.getText(), TF_calidad.getText(), (Persona)CB_personaingreso.getSelectedItem(), Integer.parseInt(FTF_tamano.getText())));
+        }
+        else if (((String)CB_tipoobjeto.getSelectedItem()).equals("Ropa")) {
+            listao.add(new Ropa(size, TF_tipotela.getText(), TF_paiselab.getText(), JB_color.getBackground(), TA_descripcion.getText(), TF_marca.getText(), TF_calidad.getText(), (Persona)CB_personaingreso.getSelectedItem(), Integer.parseInt(FTF_tamano.getText())));
+        }
+        else if (((String)CB_tipoobjeto.getSelectedItem()).equals("Objeto de hogar")) {
+            listao.add(new ObjetoHogar(TA_deschogar.getText(), TA_instrucciones.getText(), FTF_tgarantia.getText(), JB_color.getBackground(), TA_descripcion.getText(), TF_marca.getText(), TF_calidad.getText(), (Persona)CB_personaingreso.getSelectedItem(), Integer.parseInt(FTF_tamano.getText())));
+        }
+        DefaultComboBoxModel mod = (DefaultComboBoxModel)CB_selecobjetomod.getModel();
+        //DefaultComboBoxModel.removeAllElements();
+        mod.removeAllElements();
+        for (Objeto objeto : listao) {
+            mod.addElement(objeto);
+        }
+        Objeto nuevoobjeto = (Objeto)CB_selecobjetomod.getSelectedItem();
+        
+    }//GEN-LAST:event_JB_agregarobjetoMouseClicked
+
+    private void JB_colorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_colorMouseClicked
+        // TODO add your handling code here:
+        JB_color.setBackground(JColorChooser.showDialog(this, "Elegir color", Color.yellow));
+    }//GEN-LAST:event_JB_colorMouseClicked
+
+    private void JB_modcolorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_modcolorMouseClicked
+        // TODO add your handling code here:
+        JB_modcolor.setBackground(JColorChooser.showDialog(this, "Elegir color", Color.yellow));
+    }//GEN-LAST:event_JB_modcolorMouseClicked
 
     /**
      * @param args the command line arguments

@@ -770,6 +770,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="JB_color">
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="JB_colorMouseClicked"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel26">
               <Properties>
@@ -949,6 +952,7 @@
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="buttonGroup3"/>
                 </Property>
+                <Property name="selected" type="boolean" value="true"/>
                 <Property name="text" type="java.lang.String" value="S"/>
               </Properties>
             </Component>
@@ -992,6 +996,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Agregar objeto"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="JB_agregarobjetoMouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -1254,6 +1261,7 @@
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="buttonGroup4"/>
                 </Property>
+                <Property name="selected" type="boolean" value="true"/>
                 <Property name="text" type="java.lang.String" value="M"/>
               </Properties>
             </Component>
@@ -1275,6 +1283,7 @@
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="buttonGroup5"/>
                 </Property>
+                <Property name="selected" type="boolean" value="true"/>
                 <Property name="text" type="java.lang.String" value="Soltero"/>
               </Properties>
             </Component>
@@ -1434,8 +1443,8 @@
                                   <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                                       <Component id="TF_modcalidad" alignment="0" pref="127" max="32767" attributes="0"/>
                                       <Component id="TF_modmarca" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="FTF_modtamano" alignment="0" max="32767" attributes="0"/>
                                   </Group>
+                                  <Component id="FTF_modtamano" min="-2" pref="127" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -1679,6 +1688,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="JB_modcolor">
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="JB_modcolorMouseClicked"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel68">
               <Properties>
@@ -1858,6 +1870,7 @@
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="buttonGroup6"/>
                 </Property>
+                <Property name="selected" type="boolean" value="true"/>
                 <Property name="text" type="java.lang.String" value="S"/>
               </Properties>
             </Component>
