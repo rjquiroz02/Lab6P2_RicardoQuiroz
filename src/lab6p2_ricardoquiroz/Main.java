@@ -29,6 +29,12 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        buttonGroup2 = new javax.swing.ButtonGroup();
+        buttonGroup3 = new javax.swing.ButtonGroup();
+        buttonGroup4 = new javax.swing.ButtonGroup();
+        buttonGroup5 = new javax.swing.ButtonGroup();
+        buttonGroup6 = new javax.swing.ButtonGroup();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         JP_crearpersona = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -225,14 +231,18 @@ public class Main extends javax.swing.JFrame {
 
         jLabel6.setText("Sexo");
 
+        buttonGroup1.add(RB_male);
         RB_male.setText("M");
 
+        buttonGroup1.add(RB_female);
         RB_female.setText("F");
 
         jLabel7.setText("Estado Civil");
 
+        buttonGroup2.add(RB_soltero);
         RB_soltero.setText("Soltero");
 
+        buttonGroup2.add(RB_casado);
         RB_casado.setText("Casado");
 
         jLabel8.setText("Altura");
@@ -492,12 +502,16 @@ public class Main extends javax.swing.JFrame {
         TA_instrucciones.setRows(5);
         jScrollPane4.setViewportView(TA_instrucciones);
 
+        buttonGroup3.add(RB_S);
         RB_S.setText("S");
 
+        buttonGroup3.add(RB_M);
         RB_M.setText("M");
 
+        buttonGroup3.add(RB_L);
         RB_L.setText("L");
 
+        buttonGroup3.add(RB_XL);
         RB_XL.setText("XL");
 
         jLabel42.setText("Tiempo Garantia");
@@ -714,14 +728,18 @@ public class Main extends javax.swing.JFrame {
 
         jLabel48.setText("Sexo");
 
+        buttonGroup4.add(RB_modmale);
         RB_modmale.setText("M");
 
+        buttonGroup4.add(RB_modfemale);
         RB_modfemale.setText("F");
 
         jLabel49.setText("Estado Civil");
 
+        buttonGroup5.add(RB_modsoltero);
         RB_modsoltero.setText("Soltero");
 
+        buttonGroup5.add(RB_modcasado);
         RB_modcasado.setText("Casado");
 
         jLabel50.setText("Altura");
@@ -975,12 +993,16 @@ public class Main extends javax.swing.JFrame {
         TA_modinstrucciones.setRows(5);
         jScrollPane8.setViewportView(TA_modinstrucciones);
 
+        buttonGroup6.add(RB_modS);
         RB_modS.setText("S");
 
+        buttonGroup6.add(RB_modM);
         RB_modM.setText("M");
 
+        buttonGroup6.add(RB_modL);
         RB_modL.setText("L");
 
+        buttonGroup6.add(RB_modXL);
         RB_modXL.setText("XL");
 
         jLabel84.setText("Tiempo Garantia");
@@ -1380,6 +1402,12 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField TF_paiselab;
     private javax.swing.JTextField TF_tipotela;
     private javax.swing.JTextField TF_usuario;
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;
+    private javax.swing.ButtonGroup buttonGroup3;
+    private javax.swing.ButtonGroup buttonGroup4;
+    private javax.swing.ButtonGroup buttonGroup5;
+    private javax.swing.ButtonGroup buttonGroup6;
     private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
