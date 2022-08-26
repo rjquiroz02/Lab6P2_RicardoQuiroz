@@ -209,9 +209,17 @@ public class Main extends javax.swing.JFrame {
         jLabel65 = new javax.swing.JLabel();
         CB_selecobjetomod = new javax.swing.JComboBox<>();
         JP_jerarpersona = new javax.swing.JPanel();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        JT_jerarpersonas = new javax.swing.JTree();
         JP_jerarobjeto = new javax.swing.JPanel();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        JT_jerarobjetos = new javax.swing.JTree();
         JP_listapersona = new javax.swing.JPanel();
+        jScrollPane12 = new javax.swing.JScrollPane();
+        JL_listapersonas = new javax.swing.JList<>();
         JP_listaobjeto = new javax.swing.JPanel();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        JL_listaobjetos = new javax.swing.JList<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -1214,54 +1222,86 @@ public class Main extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Modificar Objeto", JP_modobjeto);
 
+        jScrollPane9.setViewportView(JT_jerarpersonas);
+
         javax.swing.GroupLayout JP_jerarpersonaLayout = new javax.swing.GroupLayout(JP_jerarpersona);
         JP_jerarpersona.setLayout(JP_jerarpersonaLayout);
         JP_jerarpersonaLayout.setHorizontalGroup(
             JP_jerarpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 951, Short.MAX_VALUE)
+            .addGroup(JP_jerarpersonaLayout.createSequentialGroup()
+                .addGap(42, 42, 42)
+                .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 857, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(52, Short.MAX_VALUE))
         );
         JP_jerarpersonaLayout.setVerticalGroup(
             JP_jerarpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 650, Short.MAX_VALUE)
+            .addGroup(JP_jerarpersonaLayout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 598, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(29, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Jerarquia de Personas", JP_jerarpersona);
+
+        jScrollPane10.setViewportView(JT_jerarobjetos);
 
         javax.swing.GroupLayout JP_jerarobjetoLayout = new javax.swing.GroupLayout(JP_jerarobjeto);
         JP_jerarobjeto.setLayout(JP_jerarobjetoLayout);
         JP_jerarobjetoLayout.setHorizontalGroup(
             JP_jerarobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 951, Short.MAX_VALUE)
+            .addGroup(JP_jerarobjetoLayout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 877, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(48, Short.MAX_VALUE))
         );
         JP_jerarobjetoLayout.setVerticalGroup(
             JP_jerarobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 650, Short.MAX_VALUE)
+            .addGroup(JP_jerarobjetoLayout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 591, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Jerarquia de Objetos", JP_jerarobjeto);
+
+        jScrollPane12.setViewportView(JL_listapersonas);
 
         javax.swing.GroupLayout JP_listapersonaLayout = new javax.swing.GroupLayout(JP_listapersona);
         JP_listapersona.setLayout(JP_listapersonaLayout);
         JP_listapersonaLayout.setHorizontalGroup(
             JP_listapersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 951, Short.MAX_VALUE)
+            .addGroup(JP_listapersonaLayout.createSequentialGroup()
+                .addGap(48, 48, 48)
+                .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 850, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(53, Short.MAX_VALUE))
         );
         JP_listapersonaLayout.setVerticalGroup(
             JP_listapersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 650, Short.MAX_VALUE)
+            .addGroup(JP_listapersonaLayout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(335, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Lista de Personas", JP_listapersona);
+
+        jScrollPane11.setViewportView(JL_listaobjetos);
 
         javax.swing.GroupLayout JP_listaobjetoLayout = new javax.swing.GroupLayout(JP_listaobjeto);
         JP_listaobjeto.setLayout(JP_listaobjetoLayout);
         JP_listaobjetoLayout.setHorizontalGroup(
             JP_listaobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 951, Short.MAX_VALUE)
+            .addGroup(JP_listaobjetoLayout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 860, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(57, Short.MAX_VALUE))
         );
         JP_listaobjetoLayout.setVerticalGroup(
             JP_listaobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 650, Short.MAX_VALUE)
+            .addGroup(JP_listaobjetoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(345, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Lista de Objetos", JP_listaobjeto);
@@ -1350,6 +1390,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton JB_modcolor;
     private javax.swing.JButton JB_modobjeto;
     private javax.swing.JButton JB_modpersona;
+    private javax.swing.JList<String> JL_listaobjetos;
+    private javax.swing.JList<String> JL_listapersonas;
     private javax.swing.JPanel JP_crearobjeto;
     private javax.swing.JPanel JP_crearpersona;
     private javax.swing.JPanel JP_jerarobjeto;
@@ -1358,6 +1400,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel JP_listapersona;
     private javax.swing.JPanel JP_modobjeto;
     private javax.swing.JPanel JP_modpersona;
+    private javax.swing.JTree JT_jerarobjetos;
+    private javax.swing.JTree JT_jerarpersonas;
     private javax.swing.JRadioButton RB_L;
     private javax.swing.JRadioButton RB_M;
     private javax.swing.JRadioButton RB_S;
@@ -1494,6 +1538,9 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel85;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane10;
+    private javax.swing.JScrollPane jScrollPane11;
+    private javax.swing.JScrollPane jScrollPane12;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
@@ -1501,6 +1548,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTabbedPane jTabbedPane1;
     // End of variables declaration//GEN-END:variables
 }
