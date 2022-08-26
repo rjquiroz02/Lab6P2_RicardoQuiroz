@@ -1108,7 +1108,7 @@
                                                       </Group>
                                                   </Group>
                                                   <Group type="102" alignment="0" attributes="0">
-                                                      <Component id="jFormattedTextField1" min="-2" pref="90" max="-2" attributes="0"/>
+                                                      <Component id="FTF_modsueldo" min="-2" pref="90" max="-2" attributes="0"/>
                                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                                       <Component id="jLabel64" min="-2" pref="31" max="-2" attributes="0"/>
                                                   </Group>
@@ -1204,7 +1204,7 @@
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel63" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
-                          <Component id="jFormattedTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="FTF_modsueldo" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel64" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
@@ -1398,7 +1398,7 @@
                 <Property name="text" type="java.lang.String" value="Sueldo"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JFormattedTextField" name="jFormattedTextField1">
+            <Component class="javax.swing.JFormattedTextField" name="FTF_modsueldo">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel64">
               <Properties>

@@ -164,7 +164,7 @@ public class Main extends javax.swing.JFrame {
         FTF_modttrabajando = new javax.swing.JFormattedTextField();
         jLabel62 = new javax.swing.JLabel();
         jLabel63 = new javax.swing.JLabel();
-        jFormattedTextField1 = new javax.swing.JFormattedTextField();
+        FTF_modsueldo = new javax.swing.JFormattedTextField();
         jLabel64 = new javax.swing.JLabel();
         JB_modpersona = new javax.swing.JButton();
         JP_modobjeto = new javax.swing.JPanel();
@@ -900,7 +900,7 @@ public class Main extends javax.swing.JFrame {
                                                     .addGap(18, 18, Short.MAX_VALUE)
                                                     .addComponent(jLabel62)))
                                             .addGroup(JP_modpersonaLayout.createSequentialGroup()
-                                                .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(FTF_modsueldo, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(18, 18, 18)
                                                 .addComponent(jLabel64, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))))))))
                     .addGroup(JP_modpersonaLayout.createSequentialGroup()
@@ -973,7 +973,7 @@ public class Main extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel63, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(FTF_modsueldo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel64))
                 .addGap(39, 39, 39)
                 .addComponent(JB_modpersona, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1473,6 +1473,37 @@ public class Main extends javax.swing.JFrame {
     private void JB_modpersonaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_modpersonaMouseClicked
         // TODO add your handling code here:
         listap.remove((Persona)CB_selecmodpersona.getSelectedItem());
+        String sexo;
+        String estadoc;
+        if (RB_modcasado.isSelected()) {
+            estadoc = "Casado";
+        }
+        else{
+            estadoc = "Soltero";
+        }
+        if (RB_modmale.isSelected()) {
+            sexo = "M";
+        }
+        else{
+            sexo = "F";
+        }
+        if ((CB_tipopersona.getSelectedItem()) instanceof Gerente) {
+            listap.add(new Gerente(TF_modusuario.getText(), TF_modcontrasena.getText(), (String)CB_modcargo.getSelectedItem(), TF_modid.getText(), TF_modnombre.getText(), estadoc, sexo, Integer.parseInt(FTF_modedad.getText()), Integer.parseInt(FTF_modaltura.getText()), Integer.parseInt(FTF_modpeso.getText())));
+        }
+        else if ((CB_tipopersona.getSelectedItem()) instanceof Personalg) {
+            listap.add(new Personalg(TF_modocupacion.getText(), TF_modhorario.getText(), Integer.parseInt(FTF_modttrabajando.getText()), Integer.parseInt(FTF_modsueldo.getText()), TF_modid.getText(), TF_modnombre.getText(), estadoc, sexo, Integer.parseInt(FTF_modedad.getText()), Integer.parseInt(FTF_modaltura.getText()), Integer.parseInt(FTF_modpeso.getText())));
+        }
+        JOptionPane.showMessageDialog(this, "Modificado exitosamente");
+        DefaultComboBoxModel modelo = (DefaultComboBoxModel)CB_selecmodpersona.getModel();
+        //DefaultComboBoxModel.removeAllElements();
+        modelo.removeAllElements();
+        for (Persona persona : listap) {
+            modelo.addElement(persona);
+        }
+        Persona nuevapersona2 = (Persona)CB_selecmodpersona.getSelectedItem();
+        
+        
+        
     }//GEN-LAST:event_JB_modpersonaMouseClicked
 
     /**
@@ -1529,6 +1560,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField FTF_modcomodidad;
     private javax.swing.JFormattedTextField FTF_modedad;
     private javax.swing.JFormattedTextField FTF_modpeso;
+    private javax.swing.JFormattedTextField FTF_modsueldo;
     private javax.swing.JFormattedTextField FTF_modtalla;
     private javax.swing.JFormattedTextField FTF_modtamano;
     private javax.swing.JFormattedTextField FTF_modtgarantia;
@@ -1609,7 +1641,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup4;
     private javax.swing.ButtonGroup buttonGroup5;
     private javax.swing.ButtonGroup buttonGroup6;
-    private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
