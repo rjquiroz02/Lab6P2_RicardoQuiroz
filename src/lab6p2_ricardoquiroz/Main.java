@@ -9,6 +9,7 @@ import java.awt.Color;
 import java.util.ArrayList;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JColorChooser;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -813,6 +814,11 @@ public class Main extends javax.swing.JFrame {
         jLabel64.setText("lps");
 
         JB_modpersona.setText("Modificar Persona");
+        JB_modpersona.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_modpersonaMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout JP_modpersonaLayout = new javax.swing.GroupLayout(JP_modpersona);
         JP_modpersona.setLayout(JP_modpersonaLayout);
@@ -1399,6 +1405,8 @@ public class Main extends javax.swing.JFrame {
         else if (((String)CB_tipopersona.getSelectedItem()).equals("Personal General")) {
             listap.add(new Personalg(TF_ocupacion.getText(), TF_horario.getText(), Integer.parseInt(FTF_ttrabajando.getText()), Integer.parseInt(FTF_sueldo.getText()), TF_id.getText(), TF_nombre.getText(), estadoc, sexo, Integer.parseInt(FTF_edad.getText()), Integer.parseInt(FTF_altura.getText()), Integer.parseInt(FTF_peso.getText())));
         }
+        JOptionPane.showMessageDialog(this, "Agregado exitosamente");
+        
         DefaultComboBoxModel mod = (DefaultComboBoxModel)CB_personaingreso.getModel();
         //DefaultComboBoxModel.removeAllElements();
         mod.removeAllElements();
@@ -1441,6 +1449,7 @@ public class Main extends javax.swing.JFrame {
         else if (((String)CB_tipoobjeto.getSelectedItem()).equals("Objeto de hogar")) {
             listao.add(new ObjetoHogar(TA_deschogar.getText(), TA_instrucciones.getText(), FTF_tgarantia.getText(), JB_color.getBackground(), TA_descripcion.getText(), TF_marca.getText(), TF_calidad.getText(), (Persona)CB_personaingreso.getSelectedItem(), Integer.parseInt(FTF_tamano.getText())));
         }
+        JOptionPane.showMessageDialog(this, "Agregado exitosamente");
         DefaultComboBoxModel mod = (DefaultComboBoxModel)CB_selecobjetomod.getModel();
         //DefaultComboBoxModel.removeAllElements();
         mod.removeAllElements();
@@ -1460,6 +1469,11 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
         JB_modcolor.setBackground(JColorChooser.showDialog(this, "Elegir color", Color.yellow));
     }//GEN-LAST:event_JB_modcolorMouseClicked
+
+    private void JB_modpersonaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_modpersonaMouseClicked
+        // TODO add your handling code here:
+        listap.remove((Persona)CB_selecmodpersona.getSelectedItem());
+    }//GEN-LAST:event_JB_modpersonaMouseClicked
 
     /**
      * @param args the command line arguments
