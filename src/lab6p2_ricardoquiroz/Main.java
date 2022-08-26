@@ -1406,6 +1406,13 @@ public class Main extends javax.swing.JFrame {
             mod.addElement(persona);
         }
         Persona nuevapersona = (Persona)CB_personaingreso.getSelectedItem();
+        DefaultComboBoxModel modelo = (DefaultComboBoxModel)CB_selecmodpersona.getModel();
+        //DefaultComboBoxModel.removeAllElements();
+        modelo.removeAllElements();
+        for (Persona persona : listap) {
+            modelo.addElement(persona);
+        }
+        Persona nuevapersona2 = (Persona)CB_selecmodpersona.getSelectedItem();
         
         
     }//GEN-LAST:event_JB_agregarpersonaMouseClicked
