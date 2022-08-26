@@ -27,17 +27,131 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        JP_crearpersona = new javax.swing.JPanel();
+        JP_crearobjeto = new javax.swing.JPanel();
+        JP_modpersona = new javax.swing.JPanel();
+        JP_modobjeto = new javax.swing.JPanel();
+        JP_jerarpersona = new javax.swing.JPanel();
+        JP_jerarobjeto = new javax.swing.JPanel();
+        JP_listapersona = new javax.swing.JPanel();
+        JP_listaobjeto = new javax.swing.JPanel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        javax.swing.GroupLayout JP_crearpersonaLayout = new javax.swing.GroupLayout(JP_crearpersona);
+        JP_crearpersona.setLayout(JP_crearpersonaLayout);
+        JP_crearpersonaLayout.setHorizontalGroup(
+            JP_crearpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 801, Short.MAX_VALUE)
+        );
+        JP_crearpersonaLayout.setVerticalGroup(
+            JP_crearpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 554, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Crear Persona", JP_crearpersona);
+
+        javax.swing.GroupLayout JP_crearobjetoLayout = new javax.swing.GroupLayout(JP_crearobjeto);
+        JP_crearobjeto.setLayout(JP_crearobjetoLayout);
+        JP_crearobjetoLayout.setHorizontalGroup(
+            JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 801, Short.MAX_VALUE)
+        );
+        JP_crearobjetoLayout.setVerticalGroup(
+            JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 554, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Crear Objeto", JP_crearobjeto);
+
+        javax.swing.GroupLayout JP_modpersonaLayout = new javax.swing.GroupLayout(JP_modpersona);
+        JP_modpersona.setLayout(JP_modpersonaLayout);
+        JP_modpersonaLayout.setHorizontalGroup(
+            JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 801, Short.MAX_VALUE)
+        );
+        JP_modpersonaLayout.setVerticalGroup(
+            JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 554, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Modificar Persona", JP_modpersona);
+
+        javax.swing.GroupLayout JP_modobjetoLayout = new javax.swing.GroupLayout(JP_modobjeto);
+        JP_modobjeto.setLayout(JP_modobjetoLayout);
+        JP_modobjetoLayout.setHorizontalGroup(
+            JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 801, Short.MAX_VALUE)
+        );
+        JP_modobjetoLayout.setVerticalGroup(
+            JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 554, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Modificar Objeto", JP_modobjeto);
+
+        javax.swing.GroupLayout JP_jerarpersonaLayout = new javax.swing.GroupLayout(JP_jerarpersona);
+        JP_jerarpersona.setLayout(JP_jerarpersonaLayout);
+        JP_jerarpersonaLayout.setHorizontalGroup(
+            JP_jerarpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 801, Short.MAX_VALUE)
+        );
+        JP_jerarpersonaLayout.setVerticalGroup(
+            JP_jerarpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 554, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Jerarquia de Personas", JP_jerarpersona);
+
+        javax.swing.GroupLayout JP_jerarobjetoLayout = new javax.swing.GroupLayout(JP_jerarobjeto);
+        JP_jerarobjeto.setLayout(JP_jerarobjetoLayout);
+        JP_jerarobjetoLayout.setHorizontalGroup(
+            JP_jerarobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 801, Short.MAX_VALUE)
+        );
+        JP_jerarobjetoLayout.setVerticalGroup(
+            JP_jerarobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 554, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Jerarquia de Objetos", JP_jerarobjeto);
+
+        javax.swing.GroupLayout JP_listapersonaLayout = new javax.swing.GroupLayout(JP_listapersona);
+        JP_listapersona.setLayout(JP_listapersonaLayout);
+        JP_listapersonaLayout.setHorizontalGroup(
+            JP_listapersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 801, Short.MAX_VALUE)
+        );
+        JP_listapersonaLayout.setVerticalGroup(
+            JP_listapersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 554, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Lista de Personas", JP_listapersona);
+
+        javax.swing.GroupLayout JP_listaobjetoLayout = new javax.swing.GroupLayout(JP_listaobjeto);
+        JP_listaobjeto.setLayout(JP_listaobjetoLayout);
+        JP_listaobjetoLayout.setHorizontalGroup(
+            JP_listaobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 801, Short.MAX_VALUE)
+        );
+        JP_listaobjetoLayout.setVerticalGroup(
+            JP_listaobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 554, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Lista de Objetos", JP_listaobjeto);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 604, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 806, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 503, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
 
         pack();
@@ -79,5 +193,14 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel JP_crearobjeto;
+    private javax.swing.JPanel JP_crearpersona;
+    private javax.swing.JPanel JP_jerarobjeto;
+    private javax.swing.JPanel JP_jerarpersona;
+    private javax.swing.JPanel JP_listaobjeto;
+    private javax.swing.JPanel JP_listapersona;
+    private javax.swing.JPanel JP_modobjeto;
+    private javax.swing.JPanel JP_modpersona;
+    private javax.swing.JTabbedPane jTabbedPane1;
     // End of variables declaration//GEN-END:variables
 }
