@@ -11,7 +11,8 @@ package lab6p2_ricardoquiroz;
  */
 public class Personalg extends Persona{
     private String ocupacion, horario;
-    private int ttrabajando, sueldo;
+    private int ttrabajando;
+    private double sueldo;
 
     public Personalg() {
     }
@@ -48,11 +49,11 @@ public class Personalg extends Persona{
         this.ttrabajando = ttrabajando;
     }
 
-    public int getSueldo() {
+    public double getSueldo() {
         return sueldo;
     }
 
-    public void setSueldo(int sueldo) {
+    public void setSueldo(double sueldo) {
         this.sueldo = sueldo;
     }
 
