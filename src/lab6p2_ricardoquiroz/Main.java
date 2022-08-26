@@ -118,6 +118,45 @@ public class Main extends javax.swing.JFrame {
         jLabel43 = new javax.swing.JLabel();
         JB_agregarobjeto = new javax.swing.JButton();
         JP_modpersona = new javax.swing.JPanel();
+        jLabel44 = new javax.swing.JLabel();
+        CB_selecmodpersona = new javax.swing.JComboBox<>();
+        jLabel45 = new javax.swing.JLabel();
+        TF_modid = new javax.swing.JTextField();
+        jLabel46 = new javax.swing.JLabel();
+        TF_modnombre = new javax.swing.JTextField();
+        jLabel47 = new javax.swing.JLabel();
+        FTF_modedad = new javax.swing.JFormattedTextField();
+        jLabel48 = new javax.swing.JLabel();
+        RB_modmale = new javax.swing.JRadioButton();
+        RB_modfemale = new javax.swing.JRadioButton();
+        jLabel49 = new javax.swing.JLabel();
+        RB_modsoltero = new javax.swing.JRadioButton();
+        RB_modcasado = new javax.swing.JRadioButton();
+        jLabel50 = new javax.swing.JLabel();
+        FTF_modaltura = new javax.swing.JFormattedTextField();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        FTF_modpeso = new javax.swing.JFormattedTextField();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        TF_modusuario = new javax.swing.JTextField();
+        TF_modcontrasena = new javax.swing.JTextField();
+        jLabel57 = new javax.swing.JLabel();
+        CB_modcargo = new javax.swing.JComboBox<>();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        TF_modocupacion = new javax.swing.JTextField();
+        jLabel60 = new javax.swing.JLabel();
+        TF_modhorario = new javax.swing.JTextField();
+        jLabel61 = new javax.swing.JLabel();
+        FTF_modttrabajando = new javax.swing.JFormattedTextField();
+        jLabel62 = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
+        jFormattedTextField1 = new javax.swing.JFormattedTextField();
+        jLabel64 = new javax.swing.JLabel();
+        JB_modpersona = new javax.swing.JButton();
         JP_modobjeto = new javax.swing.JPanel();
         JP_jerarpersona = new javax.swing.JPanel();
         JP_jerarobjeto = new javax.swing.JPanel();
@@ -235,7 +274,7 @@ public class Main extends javax.swing.JFrame {
                                                     .addGroup(JP_crearpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                         .addComponent(jLabel9)
                                                         .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                                        .addGap(0, 32, Short.MAX_VALUE))))
+                                        .addGap(0, 73, Short.MAX_VALUE))))
                             .addComponent(jLabel15)
                             .addComponent(jLabel16))
                         .addGap(18, 18, 18)
@@ -614,15 +653,220 @@ public class Main extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Crear Objeto", JP_crearobjeto);
 
+        jLabel44.setText("Seleccione la persona que desa modificar");
+
+        jLabel45.setText("ID");
+
+        jLabel46.setText("Nombre");
+
+        jLabel47.setText("Edad");
+
+        jLabel48.setText("Sexo");
+
+        RB_modmale.setText("M");
+
+        RB_modfemale.setText("F");
+
+        jLabel49.setText("Estado Civil");
+
+        RB_modsoltero.setText("Soltero");
+
+        RB_modcasado.setText("Casado");
+
+        jLabel50.setText("Altura");
+
+        jLabel51.setText("cms");
+
+        jLabel52.setText("Peso");
+
+        jLabel53.setText("lbs");
+
+        jLabel54.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel54.setText("Gerentes");
+
+        jLabel55.setText("Usuario");
+
+        jLabel56.setText("Contrasena");
+
+        jLabel57.setText("Cargo");
+
+        CB_modcargo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Gerente de planta", "Gerente de sucursal" }));
+
+        jLabel58.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel58.setText("Personas Generales");
+
+        jLabel59.setText("Ocupacion");
+
+        jLabel60.setText("Horario");
+
+        jLabel61.setText("Tiempo trabajando");
+
+        jLabel62.setText("semanas");
+
+        jLabel63.setText("Sueldo");
+
+        jLabel64.setText("lps");
+
+        JB_modpersona.setText("Modificar Persona");
+
         javax.swing.GroupLayout JP_modpersonaLayout = new javax.swing.GroupLayout(JP_modpersona);
         JP_modpersona.setLayout(JP_modpersonaLayout);
         JP_modpersonaLayout.setHorizontalGroup(
             JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 910, Short.MAX_VALUE)
+            .addGroup(JP_modpersonaLayout.createSequentialGroup()
+                .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(JP_modpersonaLayout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, JP_modpersonaLayout.createSequentialGroup()
+                                .addComponent(jLabel44)
+                                .addGap(18, 18, 18)
+                                .addComponent(CB_selecmodpersona, javax.swing.GroupLayout.PREFERRED_SIZE, 453, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, JP_modpersonaLayout.createSequentialGroup()
+                                .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel45)
+                                    .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(jLabel48, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabel47, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(jLabel49)
+                                    .addComponent(jLabel52)
+                                    .addComponent(jLabel50))
+                                .addGap(32, 32, 32)
+                                .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(TF_modid)
+                                    .addComponent(TF_modnombre)
+                                    .addComponent(FTF_modedad, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(JP_modpersonaLayout.createSequentialGroup()
+                                        .addComponent(RB_modmale)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(RB_modfemale))
+                                    .addGroup(JP_modpersonaLayout.createSequentialGroup()
+                                        .addComponent(RB_modsoltero)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(RB_modcasado))
+                                    .addGroup(JP_modpersonaLayout.createSequentialGroup()
+                                        .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(FTF_modaltura)
+                                            .addComponent(FTF_modpeso))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel51, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel53, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, JP_modpersonaLayout.createSequentialGroup()
+                                .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(JP_modpersonaLayout.createSequentialGroup()
+                                        .addGap(55, 55, 55)
+                                        .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(JP_modpersonaLayout.createSequentialGroup()
+                                        .addGap(54, 54, 54)
+                                        .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(jLabel56)
+                                            .addComponent(jLabel55, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel57))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(TF_modusuario)
+                                            .addComponent(TF_modcontrasena)
+                                            .addComponent(CB_modcargo, 0, 153, Short.MAX_VALUE))))
+                                .addGap(123, 123, 123)
+                                .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(JP_modpersonaLayout.createSequentialGroup()
+                                        .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel59)
+                                            .addComponent(jLabel61)
+                                            .addComponent(jLabel63))
+                                        .addGap(30, 30, 30)
+                                        .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                .addComponent(TF_modocupacion)
+                                                .addComponent(TF_modhorario)
+                                                .addGroup(JP_modpersonaLayout.createSequentialGroup()
+                                                    .addComponent(FTF_modttrabajando, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addGap(18, 18, Short.MAX_VALUE)
+                                                    .addComponent(jLabel62)))
+                                            .addGroup(JP_modpersonaLayout.createSequentialGroup()
+                                                .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jLabel64, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))))))))
+                    .addGroup(JP_modpersonaLayout.createSequentialGroup()
+                        .addGap(302, 302, 302)
+                        .addComponent(JB_modpersona, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
         JP_modpersonaLayout.setVerticalGroup(
             JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 650, Short.MAX_VALUE)
+            .addGroup(JP_modpersonaLayout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel44)
+                    .addComponent(CB_selecmodpersona, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel45)
+                    .addComponent(TF_modid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel46)
+                    .addComponent(TF_modnombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel47)
+                    .addComponent(FTF_modedad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel48)
+                    .addComponent(RB_modmale)
+                    .addComponent(RB_modfemale))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel49)
+                    .addComponent(RB_modsoltero)
+                    .addComponent(RB_modcasado))
+                .addGap(18, 18, 18)
+                .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel50)
+                    .addComponent(FTF_modaltura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel51))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel52)
+                    .addComponent(FTF_modpeso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel53))
+                .addGap(36, 36, 36)
+                .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel54)
+                    .addComponent(jLabel58))
+                .addGap(18, 18, 18)
+                .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel55)
+                    .addComponent(TF_modusuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel59)
+                    .addComponent(TF_modocupacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel56)
+                    .addComponent(TF_modcontrasena, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel60)
+                    .addComponent(TF_modhorario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel57)
+                    .addComponent(CB_modcargo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel61)
+                    .addComponent(FTF_modttrabajando, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel62))
+                .addGap(18, 18, 18)
+                .addGroup(JP_modpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel63, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel64))
+                .addGap(39, 39, 39)
+                .addComponent(JB_modpersona, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(49, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Modificar Persona", JP_modpersona);
@@ -631,7 +875,7 @@ public class Main extends javax.swing.JFrame {
         JP_modobjeto.setLayout(JP_modobjetoLayout);
         JP_modobjetoLayout.setHorizontalGroup(
             JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 910, Short.MAX_VALUE)
+            .addGap(0, 951, Short.MAX_VALUE)
         );
         JP_modobjetoLayout.setVerticalGroup(
             JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -644,7 +888,7 @@ public class Main extends javax.swing.JFrame {
         JP_jerarpersona.setLayout(JP_jerarpersonaLayout);
         JP_jerarpersonaLayout.setHorizontalGroup(
             JP_jerarpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 910, Short.MAX_VALUE)
+            .addGap(0, 951, Short.MAX_VALUE)
         );
         JP_jerarpersonaLayout.setVerticalGroup(
             JP_jerarpersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -657,7 +901,7 @@ public class Main extends javax.swing.JFrame {
         JP_jerarobjeto.setLayout(JP_jerarobjetoLayout);
         JP_jerarobjetoLayout.setHorizontalGroup(
             JP_jerarobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 910, Short.MAX_VALUE)
+            .addGap(0, 951, Short.MAX_VALUE)
         );
         JP_jerarobjetoLayout.setVerticalGroup(
             JP_jerarobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -670,7 +914,7 @@ public class Main extends javax.swing.JFrame {
         JP_listapersona.setLayout(JP_listapersonaLayout);
         JP_listapersonaLayout.setHorizontalGroup(
             JP_listapersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 910, Short.MAX_VALUE)
+            .addGap(0, 951, Short.MAX_VALUE)
         );
         JP_listapersonaLayout.setVerticalGroup(
             JP_listapersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -683,7 +927,7 @@ public class Main extends javax.swing.JFrame {
         JP_listaobjeto.setLayout(JP_listaobjetoLayout);
         JP_listaobjetoLayout.setHorizontalGroup(
             JP_listaobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 910, Short.MAX_VALUE)
+            .addGap(0, 951, Short.MAX_VALUE)
         );
         JP_listaobjetoLayout.setVerticalGroup(
             JP_listaobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -746,12 +990,18 @@ public class Main extends javax.swing.JFrame {
     ArrayList<Objeto> listao = new ArrayList();
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> CB_cargo;
+    private javax.swing.JComboBox<String> CB_modcargo;
     private javax.swing.JComboBox<String> CB_personaingreso;
+    private javax.swing.JComboBox<String> CB_selecmodpersona;
     private javax.swing.JComboBox<String> CB_tipoobjeto;
     private javax.swing.JComboBox<String> CB_tipopersona;
     private javax.swing.JFormattedTextField FTF_altura;
     private javax.swing.JFormattedTextField FTF_comodidad;
     private javax.swing.JFormattedTextField FTF_edad;
+    private javax.swing.JFormattedTextField FTF_modaltura;
+    private javax.swing.JFormattedTextField FTF_modedad;
+    private javax.swing.JFormattedTextField FTF_modpeso;
+    private javax.swing.JFormattedTextField FTF_modttrabajando;
     private javax.swing.JFormattedTextField FTF_peso;
     private javax.swing.JFormattedTextField FTF_sueldo;
     private javax.swing.JFormattedTextField FTF_talla;
@@ -761,6 +1011,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton JB_agregarobjeto;
     private javax.swing.JButton JB_agregarpersona;
     private javax.swing.JButton JB_color;
+    private javax.swing.JButton JB_modpersona;
     private javax.swing.JPanel JP_crearobjeto;
     private javax.swing.JPanel JP_crearpersona;
     private javax.swing.JPanel JP_jerarobjeto;
@@ -772,6 +1023,10 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JRadioButton RB_casado;
     private javax.swing.JRadioButton RB_female;
     private javax.swing.JRadioButton RB_male;
+    private javax.swing.JRadioButton RB_modcasado;
+    private javax.swing.JRadioButton RB_modfemale;
+    private javax.swing.JRadioButton RB_modmale;
+    private javax.swing.JRadioButton RB_modsoltero;
     private javax.swing.JRadioButton RB_soltero;
     private javax.swing.JTextArea TA_descripcion;
     private javax.swing.JTextField TF_calidad;
@@ -779,10 +1034,17 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField TF_horario;
     private javax.swing.JTextField TF_id;
     private javax.swing.JTextField TF_marca;
+    private javax.swing.JTextField TF_modcontrasena;
+    private javax.swing.JTextField TF_modhorario;
+    private javax.swing.JTextField TF_modid;
+    private javax.swing.JTextField TF_modnombre;
+    private javax.swing.JTextField TF_modocupacion;
+    private javax.swing.JTextField TF_modusuario;
     private javax.swing.JTextField TF_nombre;
     private javax.swing.JTextField TF_ocupacion;
     private javax.swing.JTextField TF_paiselab;
     private javax.swing.JTextField TF_usuario;
+    private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -821,8 +1083,29 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
