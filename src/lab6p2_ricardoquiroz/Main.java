@@ -1296,7 +1296,13 @@ public class Main extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Jerarquia de Personas", JP_jerarpersona);
 
-        treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("root");
+        treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("Objetos");
+        treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Zapato");
+        treeNode1.add(treeNode2);
+        treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Ropa");
+        treeNode1.add(treeNode2);
+        treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("bjeto de hogar");
+        treeNode1.add(treeNode2);
         JT_jerarobjetos.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
         jScrollPane10.setViewportView(JT_jerarobjetos);
 
@@ -1540,7 +1546,7 @@ public class Main extends javax.swing.JFrame {
             listao.add(new Ropa(size, TF_tipotela.getText(), TF_paiselab.getText(), JB_color.getBackground(), TA_descripcion.getText(), TF_marca.getText(), TF_calidad.getText(), (Persona)CB_personaingreso.getSelectedItem(), Integer.parseInt(FTF_tamano.getText())));
             DefaultMutableTreeNode nodonombre;
             nodonombre = new DefaultMutableTreeNode(CB_tipoobjeto.getSelectedItem());
-            DefaultMutableTreeNode m = (DefaultMutableTreeNode)tree.getChild(root, 0);
+            DefaultMutableTreeNode m = (DefaultMutableTreeNode)tree.getChild(root, 1);
             m.add(nodonombre);
             tree.reload();
         }
@@ -1548,7 +1554,7 @@ public class Main extends javax.swing.JFrame {
             listao.add(new ObjetoHogar(TA_deschogar.getText(), TA_instrucciones.getText(), FTF_tgarantia.getText(), JB_color.getBackground(), TA_descripcion.getText(), TF_marca.getText(), TF_calidad.getText(), (Persona)CB_personaingreso.getSelectedItem(), Integer.parseInt(FTF_tamano.getText())));
             DefaultMutableTreeNode nodonombre;
             nodonombre = new DefaultMutableTreeNode(CB_tipoobjeto.getSelectedItem());
-            DefaultMutableTreeNode m = (DefaultMutableTreeNode)tree.getChild(root, 0);
+            DefaultMutableTreeNode m = (DefaultMutableTreeNode)tree.getChild(root, 2);
             m.add(nodonombre);
             tree.reload();
         }
