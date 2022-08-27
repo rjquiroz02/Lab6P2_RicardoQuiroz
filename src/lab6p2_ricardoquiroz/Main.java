@@ -1430,6 +1430,13 @@ public class Main extends javax.swing.JFrame {
             modelo.addElement(persona);
         }
         Persona nuevapersona2 = (Persona)CB_selecmodpersona.getSelectedItem();
+        DefaultComboBoxModel modelo2 = (DefaultComboBoxModel)CB_modpersonaingreso.getModel();
+        //DefaultComboBoxModel.removeAllElements();
+        modelo2.removeAllElements();
+        for (Persona persona : listap) {
+            modelo2.addElement(persona);
+        }
+        Persona nuevapersona3 = (Persona)CB_modpersonaingreso.getSelectedItem();
         TF_id.setText("");
         TF_nombre.setText("");
         FTF_edad.setText("");
@@ -1469,7 +1476,7 @@ public class Main extends javax.swing.JFrame {
         else if (((String)CB_tipoobjeto.getSelectedItem()).equals("Objeto de hogar")) {
             listao.add(new ObjetoHogar(TA_deschogar.getText(), TA_instrucciones.getText(), FTF_tgarantia.getText(), JB_color.getBackground(), TA_descripcion.getText(), TF_marca.getText(), TF_calidad.getText(), (Persona)CB_personaingreso.getSelectedItem(), Integer.parseInt(FTF_tamano.getText())));
         }
-        JOptionPane.showMessageDialog(this, "Agregado exitosamente");
+        JOptionPane.showMessageDialog(this, "Modificado exitosamente");
         DefaultComboBoxModel mod = (DefaultComboBoxModel)CB_selecobjetomod.getModel();
         //DefaultComboBoxModel.removeAllElements();
         mod.removeAllElements();
@@ -1477,7 +1484,16 @@ public class Main extends javax.swing.JFrame {
             mod.addElement(objeto);
         }
         Objeto nuevoobjeto = (Objeto)CB_selecobjetomod.getSelectedItem();
-        
+        TA_descripcion.setText("");
+        TF_marca.setText("");
+        TF_calidad.setText("");
+        FTF_talla.setText("");
+        TA_descsuela.setText("");
+        TF_tipotela.setText("");
+        TF_paiselab.setText("");
+        TA_deschogar.setText("");
+        TA_instrucciones.setText("");
+        FTF_tgarantia.setText("");
         
         
     }//GEN-LAST:event_JB_agregarobjetoMouseClicked
@@ -1530,6 +1546,13 @@ public class Main extends javax.swing.JFrame {
             mod.addElement(persona);
         }
         Persona nuevapersona = (Persona)CB_personaingreso.getSelectedItem();
+        DefaultComboBoxModel modelo2 = (DefaultComboBoxModel)CB_modpersonaingreso.getModel();
+        //DefaultComboBoxModel.removeAllElements();
+        modelo2.removeAllElements();
+        for (Persona persona : listap) {
+            modelo2.addElement(persona);
+        }
+        Persona nuevapersona3 = (Persona)CB_modpersonaingreso.getSelectedItem();
         TF_modid.setText("");
         TF_modnombre.setText("");
         FTF_modedad.setText("");
@@ -1545,9 +1568,37 @@ public class Main extends javax.swing.JFrame {
 
     private void JB_modobjetoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_modobjetoMouseClicked
         // TODO add your handling code here:
-        
-        
-        
+        String size;
+        if (RB_modS.isSelected()) {
+            size = "S";
+        }
+        else if (RB_modM.isSelected()) {
+            size = "M";
+        }
+        else if (RB_modL.isSelected()) {
+            size = "L";
+        }
+        else{
+            size = "XL";
+        }
+        if ((CB_selecobjetomod.getSelectedItem()) instanceof Zapato) {
+            listao.add(new Zapato(Integer.parseInt(FTF_modtalla.getText()), Integer.parseInt(FTF_modcomodidad.getText()), TA_moddescsuela.getText(), JB_modcolor.getBackground(), TA_moddescripcion.getText(), TF_modmarca.getText(), TF_modcalidad.getText(), (Persona)CB_modpersonaingreso.getSelectedItem(), Integer.parseInt(FTF_modtamano.getText())));
+        }
+        else if ((CB_selecobjetomod.getSelectedItem()) instanceof Ropa) {
+            listao.add(new Ropa(size, TF_modtipotela.getText(), TF_modpaiselab.getText(), JB_modcolor.getBackground(), TA_moddescripcion.getText(), TF_modmarca.getText(), TF_modcalidad.getText(), (Persona)CB_modpersonaingreso.getSelectedItem(), Integer.parseInt(FTF_modtamano.getText())));
+        }
+        else if ((CB_selecobjetomod.getSelectedItem()) instanceof Objeto) {
+            listao.add(new ObjetoHogar(TA_moddeschogar.getText(), TA_modinstrucciones.getText(), FTF_modtgarantia.getText(), JB_modcolor.getBackground(), TA_moddescripcion.getText(), TF_modmarca.getText(), TF_modcalidad.getText(), (Persona)CB_modpersonaingreso.getSelectedItem(), Integer.parseInt(FTF_modtamano.getText())));
+        }
+        JOptionPane.showMessageDialog(this, "Modificado exitosamente");
+        listao.remove((Objeto)CB_selecobjetomod.getSelectedItem());
+        DefaultComboBoxModel mod = (DefaultComboBoxModel)CB_selecobjetomod.getModel();
+        //DefaultComboBoxModel.removeAllElements();
+        mod.removeAllElements();
+        for (Objeto objeto : listao) {
+            mod.addElement(objeto);
+        }
+        Objeto nuevoobjeto = (Objeto)CB_selecobjetomod.getSelectedItem();
         
         
         
