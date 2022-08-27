@@ -8,8 +8,11 @@ package lab6p2_ricardoquiroz;
 import java.awt.Color;
 import java.util.ArrayList;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.DefaultListModel;
 import javax.swing.JColorChooser;
 import javax.swing.JOptionPane;
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
 
 /**
  *
@@ -219,15 +222,13 @@ public class Main extends javax.swing.JFrame {
         jScrollPane10 = new javax.swing.JScrollPane();
         JT_jerarobjetos = new javax.swing.JTree();
         JP_listapersona = new javax.swing.JPanel();
-        jScrollPane12 = new javax.swing.JScrollPane();
-        JL_listapersonas = new javax.swing.JList<>();
         jLabel86 = new javax.swing.JLabel();
         JB_eliminarlistapersonas = new javax.swing.JButton();
         JP_listaobjeto = new javax.swing.JPanel();
-        jScrollPane11 = new javax.swing.JScrollPane();
-        JL_listaobjetos = new javax.swing.JList<>();
         jLabel66 = new javax.swing.JLabel();
         JB_eliminarlistaobjetos = new javax.swing.JButton();
+        jScrollPane13 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -458,7 +459,7 @@ public class Main extends javax.swing.JFrame {
                             .addComponent(jLabel20))
                         .addGap(18, 18, 18)
                         .addComponent(jLabel21)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
                 .addComponent(JB_agregarpersona)
                 .addGap(23, 23, 23))
         );
@@ -723,7 +724,7 @@ public class Main extends javax.swing.JFrame {
                                     .addGroup(JP_crearobjetoLayout.createSequentialGroup()
                                         .addGap(38, 38, 38)
                                         .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
                                 .addGroup(JP_crearobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel42)
                                     .addComponent(FTF_tgarantia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -977,7 +978,7 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jLabel64))
                 .addGap(39, 39, 39)
                 .addComponent(JB_modpersona, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(49, Short.MAX_VALUE))
+                .addContainerGap(89, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Modificar Persona", JP_modpersona);
@@ -1238,7 +1239,7 @@ public class Main extends javax.swing.JFrame {
                                     .addGroup(JP_modobjetoLayout.createSequentialGroup()
                                         .addGap(38, 38, 38)
                                         .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                                 .addGroup(JP_modobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel84)
                                     .addComponent(FTF_modtgarantia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1268,7 +1269,7 @@ public class Main extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Modificar Objeto", JP_modobjeto);
 
-        javax.swing.tree.DefaultMutableTreeNode treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("root");
+        javax.swing.tree.DefaultMutableTreeNode treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("Personas");
         JT_jerarpersonas.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
         jScrollPane9.setViewportView(JT_jerarpersonas);
 
@@ -1286,7 +1287,7 @@ public class Main extends javax.swing.JFrame {
             .addGroup(JP_jerarpersonaLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 598, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addContainerGap(69, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Jerarquia de Personas", JP_jerarpersona);
@@ -1309,12 +1310,10 @@ public class Main extends javax.swing.JFrame {
             .addGroup(JP_jerarobjetoLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 591, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addContainerGap(80, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Jerarquia de Objetos", JP_jerarobjeto);
-
-        jScrollPane12.setViewportView(JL_listapersonas);
 
         jLabel86.setText("Seleccione el elemento de la lista que desea eliminar y despues haga click en eliminar");
 
@@ -1328,29 +1327,37 @@ public class Main extends javax.swing.JFrame {
                 .addGap(48, 48, 48)
                 .addGroup(JP_listapersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(JB_eliminarlistapersonas, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 850, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel86))
-                .addContainerGap(53, Short.MAX_VALUE))
+                .addContainerGap(498, Short.MAX_VALUE))
         );
         JP_listapersonaLayout.setVerticalGroup(
             JP_listapersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(JP_listapersonaLayout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(333, 333, 333)
                 .addComponent(jLabel86)
                 .addGap(18, 18, 18)
                 .addComponent(JB_eliminarlistapersonas)
-                .addContainerGap(262, Short.MAX_VALUE))
+                .addContainerGap(302, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Lista de Personas", JP_listapersona);
 
-        jScrollPane11.setViewportView(JL_listaobjetos);
-
         jLabel66.setText("Seleccione el elemento de la lista que desea eliminar y despues haga click en eliminar");
 
         JB_eliminarlistaobjetos.setText("Eliminar");
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane13.setViewportView(jTable1);
 
         javax.swing.GroupLayout JP_listaobjetoLayout = new javax.swing.GroupLayout(JP_listaobjeto);
         JP_listaobjeto.setLayout(JP_listaobjetoLayout);
@@ -1359,21 +1366,21 @@ public class Main extends javax.swing.JFrame {
             .addGroup(JP_listaobjetoLayout.createSequentialGroup()
                 .addGap(34, 34, 34)
                 .addGroup(JP_listaobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 831, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(JB_eliminarlistaobjetos, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 860, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel66))
-                .addContainerGap(57, Short.MAX_VALUE))
+                .addContainerGap(86, Short.MAX_VALUE))
         );
         JP_listaobjetoLayout.setVerticalGroup(
             JP_listaobjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(JP_listaobjetoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(17, 17, 17)
+                .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel66)
                 .addGap(18, 18, 18)
                 .addComponent(JB_eliminarlistaobjetos)
-                .addContainerGap(272, Short.MAX_VALUE))
+                .addContainerGap(312, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Lista de Objetos", JP_listaobjeto);
@@ -1409,7 +1416,7 @@ public class Main extends javax.swing.JFrame {
             sexo = "F";
         }
         if (((String)CB_tipopersona.getSelectedItem()).equals("Gerente")) {
-            listap.add(new Gerente(TF_usuario.getText(), TF_contrasena.getText(), (String)CB_cargo.getSelectedItem(), TF_id.getText(), TF_nombre.getText(), estadoc, sexo, Integer.parseInt(FTF_edad.getText()), Integer.parseInt(FTF_altura.getText()), Integer.parseInt(FTF_peso.getText())));
+            listap.add(new Gerente(TF_usuario.getText(), TF_contrasena.getText(), (String)CB_cargo.getSelectedItem(), TF_id.getText(), TF_nombre.getText(), estadoc, sexo, Integer.parseInt(FTF_edad.getText()), Integer.parseInt(FTF_altura.getText()), Integer.parseInt(FTF_peso.getText())));            
         }
         else if (((String)CB_tipopersona.getSelectedItem()).equals("Personal General")) {
             listap.add(new Personalg(TF_ocupacion.getText(), TF_horario.getText(), Integer.parseInt(FTF_ttrabajando.getText()), Integer.parseInt(FTF_sueldo.getText()), TF_id.getText(), TF_nombre.getText(), estadoc, sexo, Integer.parseInt(FTF_edad.getText()), Integer.parseInt(FTF_altura.getText()), Integer.parseInt(FTF_peso.getText())));
@@ -1447,6 +1454,11 @@ public class Main extends javax.swing.JFrame {
         TF_ocupacion.setText("");
         FTF_ttrabajando.setText("");
         FTF_sueldo.setText("");
+        //arbol
+        DefaultTreeModel tree = (DefaultTreeModel) JT_jerarpersonas.getModel();
+        DefaultMutableTreeNode root = (DefaultMutableTreeNode) tree.getRoot();
+        DefaultMutableTreeNode nodopersona; 
+        nodopersona = new DefaultMutableTreeNode();
         
         
         
@@ -1677,8 +1689,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton JB_modcolor;
     private javax.swing.JButton JB_modobjeto;
     private javax.swing.JButton JB_modpersona;
-    private javax.swing.JList<String> JL_listaobjetos;
-    private javax.swing.JList<String> JL_listapersonas;
     private javax.swing.JPanel JP_crearobjeto;
     private javax.swing.JPanel JP_crearpersona;
     private javax.swing.JPanel JP_jerarobjeto;
@@ -1827,8 +1837,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
-    private javax.swing.JScrollPane jScrollPane11;
-    private javax.swing.JScrollPane jScrollPane12;
+    private javax.swing.JScrollPane jScrollPane13;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
@@ -1838,5 +1847,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }
