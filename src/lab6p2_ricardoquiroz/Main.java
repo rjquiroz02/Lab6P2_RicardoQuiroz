@@ -1513,6 +1513,9 @@ public class Main extends javax.swing.JFrame {
     private void JB_agregarobjetoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_agregarobjetoMouseClicked
         // TODO add your handling code here:
         String size;
+        DefaultTreeModel tree = (DefaultTreeModel) JT_jerarpersonas.getModel();
+        DefaultMutableTreeNode root = (DefaultMutableTreeNode) tree.getRoot();
+        
         if (RB_S.isSelected()) {
             size = "S";
         }
@@ -1527,12 +1530,27 @@ public class Main extends javax.swing.JFrame {
         }
         if (((String)CB_tipoobjeto.getSelectedItem()).equals("Zapato")) {
             listao.add(new Zapato(Integer.parseInt(FTF_talla.getText()), Integer.parseInt(FTF_comodidad.getText()), TA_descsuela.getText(), JB_color.getBackground(), TA_descripcion.getText(), TF_marca.getText(), TF_calidad.getText(), (Persona)CB_personaingreso.getSelectedItem(), Integer.parseInt(FTF_tamano.getText())));
+            DefaultMutableTreeNode nodonombre;
+            nodonombre = new DefaultMutableTreeNode(TF_nombre.getText());
+            DefaultMutableTreeNode m = (DefaultMutableTreeNode)tree.getChild(root, 0);
+            m.add(nodonombre);
+            tree.reload();
         }
         else if (((String)CB_tipoobjeto.getSelectedItem()).equals("Ropa")) {
             listao.add(new Ropa(size, TF_tipotela.getText(), TF_paiselab.getText(), JB_color.getBackground(), TA_descripcion.getText(), TF_marca.getText(), TF_calidad.getText(), (Persona)CB_personaingreso.getSelectedItem(), Integer.parseInt(FTF_tamano.getText())));
+            DefaultMutableTreeNode nodonombre;
+            nodonombre = new DefaultMutableTreeNode(TF_nombre.getText());
+            DefaultMutableTreeNode m = (DefaultMutableTreeNode)tree.getChild(root, 0);
+            m.add(nodonombre);
+            tree.reload();
         }
         else if (((String)CB_tipoobjeto.getSelectedItem()).equals("Objeto de hogar")) {
             listao.add(new ObjetoHogar(TA_deschogar.getText(), TA_instrucciones.getText(), FTF_tgarantia.getText(), JB_color.getBackground(), TA_descripcion.getText(), TF_marca.getText(), TF_calidad.getText(), (Persona)CB_personaingreso.getSelectedItem(), Integer.parseInt(FTF_tamano.getText())));
+            DefaultMutableTreeNode nodonombre;
+            nodonombre = new DefaultMutableTreeNode(TF_nombre.getText());
+            DefaultMutableTreeNode m = (DefaultMutableTreeNode)tree.getChild(root, 0);
+            m.add(nodonombre);
+            tree.reload();
         }
         JOptionPane.showMessageDialog(this, "Modificado exitosamente");
         DefaultComboBoxModel mod = (DefaultComboBoxModel)CB_selecobjetomod.getModel();
