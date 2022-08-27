@@ -1416,10 +1416,36 @@ public class Main extends javax.swing.JFrame {
             sexo = "F";
         }
         if (((String)CB_tipopersona.getSelectedItem()).equals("Gerente")) {
-            listap.add(new Gerente(TF_usuario.getText(), TF_contrasena.getText(), (String)CB_cargo.getSelectedItem(), TF_id.getText(), TF_nombre.getText(), estadoc, sexo, Integer.parseInt(FTF_edad.getText()), Integer.parseInt(FTF_altura.getText()), Integer.parseInt(FTF_peso.getText())));            
+            Gerente pcreada1 = new Gerente(TF_usuario.getText(), TF_contrasena.getText(), (String)CB_cargo.getSelectedItem(), TF_id.getText(), TF_nombre.getText(), estadoc, sexo, Integer.parseInt(FTF_edad.getText()), Integer.parseInt(FTF_altura.getText()), Integer.parseInt(FTF_peso.getText()));
+            listap.add(pcreada1); 
+            DefaultTreeModel tree = (DefaultTreeModel) JT_jerarpersonas.getModel();
+            DefaultMutableTreeNode root = (DefaultMutableTreeNode) tree.getRoot();
+            DefaultMutableTreeNode nodopersona; 
+            nodopersona = new DefaultMutableTreeNode(pcreada1);
+            DefaultMutableTreeNode id; 
+            id = new DefaultMutableTreeNode(TF_id.getText());
+            DefaultMutableTreeNode nombre; 
+            nombre = new DefaultMutableTreeNode(TF_nombre.getText());
+            id.add(nombre);
+            nodopersona.add(id);
+            root.add(nodopersona);
+            tree.reload();
         }
         else if (((String)CB_tipopersona.getSelectedItem()).equals("Personal General")) {
-            listap.add(new Personalg(TF_ocupacion.getText(), TF_horario.getText(), Integer.parseInt(FTF_ttrabajando.getText()), Integer.parseInt(FTF_sueldo.getText()), TF_id.getText(), TF_nombre.getText(), estadoc, sexo, Integer.parseInt(FTF_edad.getText()), Integer.parseInt(FTF_altura.getText()), Integer.parseInt(FTF_peso.getText())));
+            Personalg pcreada2 = new Personalg(TF_ocupacion.getText(), TF_horario.getText(), Integer.parseInt(FTF_ttrabajando.getText()), Integer.parseInt(FTF_sueldo.getText()), TF_id.getText(), TF_nombre.getText(), estadoc, sexo, Integer.parseInt(FTF_edad.getText()), Integer.parseInt(FTF_altura.getText()), Integer.parseInt(FTF_peso.getText()));
+            listap.add(pcreada2);
+            DefaultTreeModel tree = (DefaultTreeModel) JT_jerarpersonas.getModel();
+            DefaultMutableTreeNode root = (DefaultMutableTreeNode) tree.getRoot();
+            DefaultMutableTreeNode nodopersona; 
+            nodopersona = new DefaultMutableTreeNode(pcreada2);
+            DefaultMutableTreeNode id; 
+            id = new DefaultMutableTreeNode(TF_id.getText());
+            DefaultMutableTreeNode nombre; 
+            nombre = new DefaultMutableTreeNode(TF_nombre.getText());
+            id.add(nombre);
+            nodopersona.add(id);
+            root.add(nodopersona);
+            tree.reload();
         }
         JOptionPane.showMessageDialog(this, "Agregado exitosamente");
         
@@ -1455,10 +1481,10 @@ public class Main extends javax.swing.JFrame {
         FTF_ttrabajando.setText("");
         FTF_sueldo.setText("");
         //arbol
-        DefaultTreeModel tree = (DefaultTreeModel) JT_jerarpersonas.getModel();
-        DefaultMutableTreeNode root = (DefaultMutableTreeNode) tree.getRoot();
-        DefaultMutableTreeNode nodopersona; 
-        nodopersona = new DefaultMutableTreeNode();
+//        DefaultTreeModel tree = (DefaultTreeModel) JT_jerarpersonas.getModel();
+//        DefaultMutableTreeNode root = (DefaultMutableTreeNode) tree.getRoot();
+//        DefaultMutableTreeNode nodopersona; 
+//        nodopersona = new DefaultMutableTreeNode();
         
         
         
